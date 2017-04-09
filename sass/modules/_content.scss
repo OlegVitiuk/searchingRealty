@@ -1,0 +1,56 @@
+@import "../utilities/_index";
+.content{
+	width: 1200px;
+}
+.title1{
+	color: #2573D8;
+	padding: 10px;
+}
+.title2{
+	color: #152935;
+	padding: 20px 20px 20px 10px; 
+	font-weight: bold;
+}
+.contlist{
+margin-top: 0px;
+text-align: right;
+
+li{
+	padding-left: 50px;
+	color: #8C9BA5;
+}
+}
+
+.leftpart{
+ width: 891px;
+}
+.photo{
+	width: 241.35px;
+	height: 167.39px;
+}
+.description{
+ }
+.contacts{
+ }
+.block_footer{
+		height: 40px;
+		margin: auto;
+	
+ }
+.centralblock{
+	width: 40%;
+}
+.otherblocks{
+	width: 30%;
+}
+.moveright{
+	padding-left: 350px;
+}
+.rightpart{
+  width: 1200-891px;
+  height: 594px;
+}
+.whiteback{
+	margin-top: 10px;
+	background-color: white;
+}

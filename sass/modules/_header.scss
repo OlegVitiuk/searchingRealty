@@ -1,0 +1,69 @@
+@import "../utilities/_index";
+.header{
+  background-color: #30AE63;
+  width: 100%;
+  color: $header_color;
+  font-size: 14px;
+  font-family: $font;
+}
+.header__menu{
+    width: 100%;
+    display: flex;
+    padding: 20px 0px 0px 123px;
+}
+.nav_link{
+  color: $header_color;
+  margin-right: 44px;
+  display: flex;
+  height: 25px;
+  }
+.left{
+  width: 454px;
+  padding: 7px 0px 0px 48px;
+  display: flex;
+}
+.header_ovals{
+  height: 20px;
+  width:25px;
+  display: flex;
+  margin-right: 5px;
+}
+.header_oval{
+  width: 4px;
+  height: 4px;
+  background: $header_color;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 5px 4px 0px 0px;
+}
+
+.right{
+  width:320px;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: -4px 0px 0px 56px;
+}
+
+.shareAds{
+  width:236px;
+  display: flex;
+  background-color: rgba(255,255,255,0.1);
+
+}
+.shareAds_img{
+  height: 16px;
+  margin: auto 14px;
+}
+.shareAds_item{
+  display: flex;
+}
+.shareAds_text{
+  margin: auto;
+}
+.enter{
+  padding:15px 0px 0px 15px;
+  width:60px;
+}

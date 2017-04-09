@@ -1,0 +1,51 @@
+@import "../utilities/_index";
+.footer{
+		width: 844px;
+		a{
+	color: black;
+	}
+	li{
+		line-height: 20px;
+		margin-top: 5px;
+		font-size:14px;
+	}
+}
+.footer_metrovarkacolumn{
+	margin-left: 0%;
+	padding-left: 0%;
+}
+
+.footer_morecolumn,
+.footer_contactcolumn,
+.footer_partnershipcolumn{
+	margin-left: 10%;
+	padding-left: 5%;
+	width: 20%;
+}
+
+.footer_listtitle{
+	line-height: 32px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.list{
+	display: flex;
+}
+.footer_logo{
+	margin-bottom: 0px;
+	margin-left: 50%;
+	width:51px;
+	height:47px;	
+	padding-top: 50px;
+}
+.footer_submappl{
+	height: 40px;
+	margin-top: 15px;
+}
+.footer_submappl_a{
+	background-color: #30AE63;
+	color: white;
+	padding: 10px;
+	width: 162px;
+	height: 40px
+}

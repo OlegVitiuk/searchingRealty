@@ -1,0 +1,19 @@
+@import "../utilities/_index";
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color:#DFE3E6;
+}
+.page{
+  width:1200px;
+  //margin:0 auto;
+}
+.underline:hover{
+  border-bottom:2px solid #FFFFFF;
+}
+a{
+  text-decoration: none;
+}
+.button{
+  border: 0;
+  height: 40px;
+}
