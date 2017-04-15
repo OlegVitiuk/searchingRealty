@@ -5,7 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95881331-ed37-41b2-9624-10025faf48a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Combined Shape.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Group 17.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval 4.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval 5.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval 6.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Oval.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Rectangle 11.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Rectangle 430.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Selected.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Shape.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Shape.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/Shape2.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/checkmark--glyph.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/closeModal.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/facebook.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/homees-01.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/homepage-h.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/instagram.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/iphone.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/lastOfferFirstAppartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/lastOfferSecondAppartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/lastOfferThirdAppartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/leftBackground.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/metro.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/metrovkaFirstApartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/metrovkaFooterLogo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/metrovkaSecondApartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/metrovkaThirdApartment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/selectArrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/selectArrowOutwards.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/telegramIcon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/vk.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="searchingRealty.iws" />
@@ -32,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
-              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -257,12 +292,12 @@
       <workItem from="1492172029358" duration="13493000" />
       <workItem from="1492205735662" duration="15527000" />
       <workItem from="1492256058215" duration="233000" />
-      <workItem from="1492285147315" duration="166000" />
+      <workItem from="1492285147315" duration="543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253791000" />
+    <option name="totallyTimeSpent" value="254168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -328,18 +363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
           <caret line="70" column="30" selection-start-line="70" selection-start-column="30" selection-end-line="70" selection-end-column="30" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -377,18 +401,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,25 +620,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#ul#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
-          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
           <folding>
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
