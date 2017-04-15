@@ -1,0 +1,27 @@
+@import "../utilities/_index";
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: RGBA(90, 104, 114, .08);
+}
+.page{
+  margin: auto;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+@media(min-width: 360px){
+	.page,.content,.footer,.header,.leftpart,.rightpart{
+		width:auto;
+	}
+}
+@media(min-width: 890px){
+    .list{
+      display: flex;
+    }
+  }
+a{
+  text-decoration: none;
+}
+.button{
+  border:0;
+  height: 40px;
+}

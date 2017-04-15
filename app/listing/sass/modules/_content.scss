@@ -1,0 +1,143 @@
+@import "../utilities/_index";
+@import "../states/_index";
+.content{
+	width: 100%;
+}
+.title1{
+	color: #2573D8;
+	padding: 10px;
+}
+.title2{
+	color: #152935;
+	padding: 20px 20px 20px 10px; 
+	font-weight: bold;
+}
+.contlist{
+margin-top: 0px;
+text-align: right;
+
+li{
+	padding-left: 50px;
+	color: #8C9BA5;
+}
+}
+
+.leftpart{
+ width: 80%;
+}
+.photo{
+	width: 241.35px;
+	height: 167.39px;
+}
+.description{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  line-height:30px;
+  h4{
+    color: blue;
+  }
+ }
+.contacts{
+  text-align: right;
+ }
+.block_footer{
+		margin: auto;
+ }
+.lowprice{
+  background-color: #EAFFF5;
+  color: #30AD64;
+  padding: 10px;
+ img{
+  margin-top: 15px;
+  }
+}
+.highprice{
+  background-color: #FFEFEA;
+  color: #D00202;
+  padding: 10px;
+  img{
+  margin-top: 15px;
+  }
+}
+
+.otherblocks{
+  line-height:30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+	width: 25%;
+  text-align: right;
+  align: right;
+  padding-right: 15px;
+}
+.moveright{
+	padding-left: 300px;
+}
+@media(min-width:1200px){
+  .rightpart{
+    margin-top: 110px;
+    width: 20%;
+    height: 594px;
+  }
+   .c_hidden{
+  }
+}
+@media(max-width:1200px){
+  .rightpart{
+    width: 0%;
+  }
+    .leftpart{
+    width: 100%;
+  }
+  .c_hidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
+  }
+}
+@media(min-width: 360px) and (max-width:890px){
+
+  .whiteback{
+  margin-bottom: 5px;
+  }
+}
+.call_message{
+  position: relative;
+  padding-top: 30px;
+  margin-top: 10%;
+}
+.call{
+  padding-left: 40%;
+  margin:auto;
+}
+.message{
+  padding-left: 20%;
+  margin:auto;
+}
+.whiteback{
+  margin-bottom: 15px;
+  padding: 15px;
+	background-color: white;
+}
+.greyfont{
+  color: #8C9BA5; 
+  margin-left: 10px; 
+  padding-right: 540px;
+  
+}
+.blackfont{
+ color: black;
+}
+.block_greyfont{
+  color: #B1B1B1;
+}
+.content__switchers{
+  display: flex;
+  padding-left: 400px;
+}
+.metropoint{
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: 10px;
+}
