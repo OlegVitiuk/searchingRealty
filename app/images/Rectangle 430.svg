@@ -1,0 +1,49 @@
+<svg width="8" height="8" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Rectangle 430</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(410 243)" figma:type="canvas">
+<rect x="-410" y="-243" width="8" height="8" fill="#FFFFFF"/>
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M -1194 -1186L -65 -1186L -65 2197L -1194 2197L -1194 -1186Z" fill="#FFFFFF"/>
+</mask>
+<g id="890+" mask="url(#mask0_alpha)" figma:type="frame">
+<path d="M -1194 -1186L -65 -1186L -65 2197L -1194 2197L -1194 -1186Z" fill="#5A6872" fill-opacity="0.08"/>
+<g id="Stacked Group" figma:type="frame">
+<g id="Stacked Group 3" figma:type="frame">
+<g id="Stacked Group 2" figma:type="frame">
+<g id="Stacked Group" figma:type="frame">
+<g id="Group" figma:type="frame">
+<g id="Rectangle" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1075 -534)" fill="#FFFFFF"/>
+</g>
+<g id="Stacked Group" figma:type="frame">
+<g id="Group 11" figma:type="frame">
+<g id="card/no-overlay" figma:type="instance">
+<g id="Group 7" figma:type="frame">
+<g id="Stacked Group" figma:type="frame">
+<g id="Stacked Group" figma:type="frame">
+<g id="labels/subway" figma:type="instance">
+<g id="Stacked Group" figma:type="frame">
+<g id="Rectangle 430" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-410 -243)" fill="#E71D32"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 2C 0 0.895431 0.895431 0 2 0L 888 0C 889.105 0 890 0.895431 890 2L 890 382C 890 383.105 889.105 384 888 384L 2 384C 0.895431 384 0 383.105 0 382L 0 2Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 4C 0 1.79086 1.79086 0 4 0L 4 0C 6.20914 0 8 1.79086 8 4L 8 4C 8 6.20914 6.20914 8 4 8L 4 8C 1.79086 8 0 6.20914 0 4L 0 4Z"/>
+</defs>
+</svg>

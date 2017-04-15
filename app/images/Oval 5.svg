@@ -1,0 +1,12 @@
+<svg width="14" height="14" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Oval 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(650 -1166)" figma:type="canvas">
+<g id="Oval 4" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-650 1166)" fill="#30AE63"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 7 14C 10.866 14 14 10.866 14 7C 14 3.13401 10.866 0 7 0C 3.13401 0 0 3.13401 0 7C 0 10.866 3.13401 14 7 14Z"/>
+</defs>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>checkmark--glyph</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-5137 0)" figma:type="canvas">
+<g id="checkmark--glyph" figma:type="symbol">
+<g id="checkmark--glyph" figma:type="frame">
+<g id="Shape" figma:type="vector-operation">
+<use xlink:href="#path0_fill" transform="translate(5137 0)" fill="#30AE63"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 8C 0 3.6 3.6001 0 8 0C 12.3999 0 16 3.6 16 8C 16 12.4 12.3999 16 8 16C 3.6001 16 0 12.4 0 8ZM 3.3999 8.1L 6.69971 11.5L 12.1997 5.9L 10.7998 4.5L 6.69971 8.6L 4.7998 6.7L 3.3999 8.1Z"/>
+</defs>
+</svg>

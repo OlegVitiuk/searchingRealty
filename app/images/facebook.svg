@@ -1,0 +1,16 @@
+<svg width="17" height="18" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>facebook</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(410 -1846)" figma:type="canvas">
+<g id="facebook" figma:type="frame">
+<g id="Facebook" figma:type="frame">
+<g id="Shape" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-410 1846)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 15.1111 0L 1.88889 0C 0.85 0 0 0.9 0 2L 0 16C 0 17.101 0.85 18 1.88889 18L 8.5 18L 8.5 11L 6.61111 11L 6.61111 8.525L 8.5 8.525L 8.5 6.475C 8.5 4.311 9.64467 2.791 12.0568 2.791L 13.7596 2.793L 13.7596 5.398L 12.6291 5.398C 11.6903 5.398 11.3333 6.144 11.3333 6.836L 11.3333 8.526L 13.7587 8.526L 13.2222 11L 11.3333 11L 11.3333 18L 15.1111 18C 16.15 18 17 17.101 17 16L 17 2C 17 0.9 16.15 0 15.1111 0Z"/>
+</defs>
+</svg>
