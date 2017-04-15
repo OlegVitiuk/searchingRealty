@@ -2143,7 +2143,6 @@ table {
           box-sizing: border-box; }
 
 .header_wrapper {
-  height: 245px;
   width: 78.830%;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
