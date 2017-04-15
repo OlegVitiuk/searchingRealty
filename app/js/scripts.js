@@ -22,7 +22,7 @@ $(document).ready(function(){
 			$(".choose__city__content_select-item").css("display", "block").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63")
 				.css("box-shadow","0 5px 10px rgba(0,0,0,0.22)");
 			$(this).removeClass("unchecked");
-			$(".selectVisibleArrow_header").attr("src","../images/selectArrowOutwards.png");
+			$(".selectVisibleArrow_header").attr("src","images/selectArrowOutwards.png");
 			$(this).css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
 			css("border-radius",0);
 			$(".choose__city__content_select-item").last().css("border-bottom","2px solid #30AE63");
@@ -54,7 +54,7 @@ $(document).ready(function(){
 			$(".realty_search_content_select-item").css("display", "block").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63")
 				.css("box-shadow","0 5px 10px rgba(0,0,0,0.22)");
 			$(this).removeClass("unchecked");
-			$(".selectVisibleArrow").attr("src","../images/selectArrowOutwards.png");
+			$(".selectVisibleArrow").attr("src","images/selectArrowOutwards.png");
 			$(this).css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
 				css("border-radius",0);
 			$(".realty_search_content_select-item").last().css("border-bottom","2px solid #30AE63");
@@ -97,7 +97,7 @@ $(document).ready(function(){
 			$(".modal__content_select-item").css("display", "block").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63")
 				.css("box-shadow","0 5px 10px rgba(0,0,0,0.22)");
 			$(this).removeClass("unchecked");
-			$(".selectVisibleArrow_modal").attr("src","../images/selectArrowOutwards.png");
+			$(".selectVisibleArrow_modal").attr("src","images/selectArrowOutwards.png");
 			$(this).css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
 			css("border-radius",0);
 			$(".modal__content_select-item").last().css("border-bottom","2px solid #30AE63");
