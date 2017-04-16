@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE HTML>
+	<head>
+		<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>searchingRealty</title>
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="js/jquery-1.11.1.min.js"></script>
-</head>
-<body>
-    <div class="page">
-        <div class="header">
+    <script src="./js/jquery-1.11.1.min.js"></script>
+
+	</head>
+	<body>
+		<div class="page">
+         <div class="header">
             <div class="header_wrapper">
                 <div class="header__menu">
                     <div class="nav_wrapper">
-                        <a class="header__menu_icon" href="#"><img src="images/Combined%20Shape.svg" alt="Icon"></a>
+                        <a class="header__menu_icon" href="../index.html"><img src="./images/Combined%20Shape.svg" alt="Icon"></a>
                         <div class="header__navigation">
                             <a class="nav_link underline-white" href="#">Аренда</a>
-                            <a class="nav_link underline-white" href="#">Продажа</a>
-                            <a class="nav_link underline-white" href="#">Посуточно</a>
-                            <a class="nav_link underline-white" href="#">
-                                <div class="header_ovals" >
+                            <a class="h_hidden nav_link underline-white" href="#">Продажа</a>
+                            <a class="h_hidden nav_link underline-white" href="#">Посуточно</a>
+                            <a class="h_hidden nav_link underline-white" href="#">
+                                <div class="h_hidden header_ovals" >
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
@@ -31,471 +31,155 @@
                             </a>
                         </div>
                     </div>
-                    <div class="nav_register">
+                    <div class="h_hidden nav_register">
                             <a class="shareAds">
                                 <img class="shareAds_img" src="./images/Shape.png" alt="+">
                                 <p class="shareAds_text">Pазместить обьявление</p>
                             </a>
                         <a class="button enter">Войти</a>
                     </div>
-                </div>
-                <div class="header_content">
-                    <p class="content__title">Поиск недвижимости в Украине</p>
-                    <div class="content__search">
-                        <div class="choose__city">
-                            <p class="choose__city_title">Выберите город</p>
-                            <ul class="choose__city__content_select">
-                                <li>
-                                    <div class="select__header unchecked">
-                                        <p class="selectVisibleText_header">Киев</p>
-                                        <img class="selectVisibleArrow_header" src="images/selectArrow.png" alt="arrow">
-                                    </div>
-                                    <ul>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Киев</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Харьков</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Львов</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Сумы</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <!--<select class="choose__city_selector">-->
-                            <!--<option value="1">Киев</option>-->
-                            <!--<option value="1">Лондон</option>-->
-                            <!--<option value="2">Берлин</option>-->
-                            <!--<option value="3">Москва</option>-->
-                            <!--</select>-->
-                        </div>
-                        <div class="choose__rooms">
-                            <p class="choose-rooms-title">Кол-во комнат</p>
-                            <div class="choose__rooms_items">
-                                <div class="choose__rooms_item">
-                                    <p>1</p>
-                                </div>
-                                <div class="choose__rooms_item">
-                                    <p>2</p>
-                                </div>
-                                <div class="choose__rooms_item">
-                                    <p>3</p>
-                                </div>
-                                <div class="choose__rooms_item">
-                                    <p>4</p>
-                                </div>
-                                <div class="choose__rooms_item">
-                                    <p>5+</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="button content__search_start">
-                            Перейти к поиску
-                        </a>
+                    <div class = "h_rehidden">
+                        <a src = "menu" href="#"><img src = "./images/menu.png"></a>
                     </div>
                 </div>
-            </div>
+              </div>
         </div>
-        <div class="content">
-                <div class="content_realty">
-                    <div class="realty_search">
-                        <div class="realty_search_content">
-                            <div class="realty_search_content-top">
-                                    <p class="realty_search_content_title">
-                                        Недвижимость возле метро
-                                    </p>
-                                <div class="realty_search_content-menu">
-                                    <a class="nav_link-content underline-green" href="#">Квартиры</a>
-                                    <a class="nav_link-content underline-green" href="#">Дома</a>
-                                    <a class="nav_link-content underline-green" href="#">Офисы</a>
-                                </div>
-
-                                <ul class="realty_search_content_select">
-                                    <li>
-                                        <div class="select unchecked">
-                                            <div class="colorOfMetro red"></div>
-                                            <p class="selectVisibleText">Политехнический институт</p>
-                                            <img class="selectVisibleArrow" src="images/selectArrow.png" alt="arrow">
-                                        </div>
-                                        <ul>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro red"></div>
-                                                        <p class="selectVisibleText">Политехнический институт</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro red"></div>
-                                                        <p class="selectVisibleText">Шулявская</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro green"></div>
-                                                        <p class="selectVisibleText">Золотые ворота</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro blue"></div>
-                                                        <p class="selectVisibleText">Лыбедская</p>
-                                                    </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="realty_search_content_show button" href="#">Показать результаты поиска</a>
-                        </div>
-                        <img class="realty_search_img" src="./images/metro.svg" alt="metro">
-                    </div>
-                    <div class="content__realty__offers">
-                        <div class="content__realty__offers_best">
-                            <div class="wrapper__offers__content_best">
-                                <div class="offers__content_best">
-                                    <div class="content__title_best">
-                                        <p>Лучшие предложения в Киеве</p>
-                                    </div>
-                                    <div class="apartments">
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/homees-01.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">7 800 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">2 комн.  •  30 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Политехнический институт</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/homees-01.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">10 200 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">1 комн.  •  30 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Политехнический институт</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/homees-01.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">6 900 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">2 комн.  •  30 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Политехнический институт</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/homees-01.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">9 000 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">2 комн.  •  30 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Политехнический институт</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offers__best_footer">
-                                <a href="#">Смотреть лучшие ценовые предложения</a>
-                            </div>
-                        </div>
-                        <div class="content__realty__offers_last">
-                            <div class="wrapper__offers__content_last">
-                                <div class="offers__content_last">
-                                    <div class="content__title_best">
-                                        <p>Последние обьявления в Киеве</p>
-                                    </div>
-                                    <div class="content_menu">
-                                        <a class="nav_link underline-green black" href="#">Квартиры</a>
-                                        <a class="nav_link underline-green black" href="#">Дома</a>
-                                        <a class="nav_link underline-green black" href="#">Офисы</a>
-                                    </div>
-                                    <div class="apartments">
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/lastOfferFirstAppartment.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">11 800 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">2 комн.  •  48 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Политехнический институт</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/lastOfferSecondAppartment.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price">
-                                                        <p class="apartment__info__numbers__price_suma">15 000 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">3 комн.  •  100 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval red largeCircle"></div>
-                                                    <p class="metro-title">Шулявская</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/Rectangle%2011.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price twoCheckMarks">
-                                                        <p class="apartment__info__numbers__price_suma">11 800 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">1 комн.  •  30 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <div class="apartment__logo_oval blueLight largeCircle"></div>
-                                                    <p class="metro-title">Контрактовая площадь</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="apartment">
-                                            <div class="apartment__logo">
-                                                <div class="apartment__logo_ovals">
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                    <div class="apartment__logo_oval"></div>
-                                                </div>
-                                                <img src="./images/homees-01.svg" alt="apartment_picture">
-                                            </div>
-                                            <div class="apartment__info">
-                                                <div class="apartment__info_numbers">
-                                                    <div class="apartment__info__numbers_price smaller">
-                                                        <p class="apartment__info__numbers__price_suma">7 000 грн</p>
-                                                        <img class="apartment__info__numbers__price_ok" src="./images/checkmark--glyph.svg" alt="ok!">
-                                                    </div>
-                                                    <p class="apartment__info__numbers_area">2 комн.  •  40 кв.м.</p>
-                                                </div>
-                                                <div class="apartment__info_metro">
-                                                    <p class="metro-title_last">просп. Победы, 18А</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offers__best_footer">
-                                <a href="#">Смотреть самые свежие обьявления</a>
-                            </div>
-                        </div>
-                    </div>
-                <div class="content__telegram">
-                    <div class="telegram__header">
-                        <p class="telegram__header_title">Общайтесь в Telegram</p>
-                        <p class="telegram__header_text">Не отвлекайтесь больше на формальности. Получайте моментальные
-                            уведомления о новых обьявлениях, общайтесь без ограничений. </p>
-                        <div class="telegram__header_menu">
-                                <a class="nav_link-telegram underline-green black" href="#">Поиск недвижимости</a>
-                                <a class="nav_link-telegram underline-green black" href="#">Общение с клиентами</a>
-                        </div>
-                    </div>
-                    <div class="telegram__content">
-                        <div class="telegram__content_picture">
-                            <img src="./images/iphone.svg" alt="iphone with telegram bot">
-                        </div>
-                        <div class="telegram__content__info">
-                            <div class="telegram__content__info_inner">
-                                <div class="telegram__content__info__title">
-                                    <img class="telegram__content__info__title_icon" src="./images/telegramIcon.svg" alt="Telegram">
-                                    <p class="telegram__content__info__title_text black">Telegram</p>
-                                </div>
-                                <div class="telegram__content__info__text">
-                                    <div class="telegram__content__info__text_wrapper">
-                                        <p class="telegram__content__info__text_title black">Metrovka Bot</p>
-                                    </div>
-                                        <div class="telegram__content__info__text_list">
-                                            <p class="black">Собирайте аналитику по обьектам</p>
-                                            <p class="black">Получайте подсказки по эффективному продвижению обьявлений</p>
-                                            <p class="black">Общайтесь с клиентами через специальный канал телекоммуникации</p>
-                                        </div>
-                                </div>
-                                <a class="telegram__content__info_join button" href="#">Присоединиться в Telegram</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__switchers">
+			<div class = "content list">
+			 	<div class = "leftpart">
+					<div>
+						<h5 class = "title1">Долгсрочная аренда/Квартиры/Киев</h5>
+						<h2 class = "title2">Долгосрочная аренда в Киеве</h2>
+					</div>
+					<div class = "list">
+						<h6 class = "greyfont">3 варианта</h6>
+						<ul class = "listall contlist">
+							<li>Сортировать <img src = "./images/arrow.png" alt = "arrow"></li>
+							<li>Валюта<img src = "./images/arrow.png" alt = "arrow"></li>
+						</ul>
+					</div>
+					<div class = "whiteback">
+					<div class = "list">
+						<div class = "photo otherblocks">
+							<img src = "./images/flat1.png" alt = "flat">
+						</div>
+						<div class = "description">
+							<h4>2 комн., Дарницкий р-н, Пчелки 2б</h4>
+							<div class = "listall">	
+								<img class = "metropoint" src = "./images/metrogreen.png" alt = "metro">
+								<h5>Позняки </h5>
+								<h6 class = "block_greyfont"> 30 мин. пешком</h6>
+							</div>
+							<h6 class = "block_greyfont">Особенности</h6>
+							<p class = "block_greyfont">75 кв.м. этаж 1 из 5</p>
+							<p>Комунальные включены, без старой мебели, новый дом, дизайнерский ремонт, тихий район, удобная транспортная развязка, шикарный вид на Днепр</p>
+						</div>
+						<div class = "contacts otherblocks">
+								<p>11 600 грн<br>
+								<span class = "block_greyfont">460$ <u>курс</u></span></p>
+								<a class = "highprice">Высокая цена<img src = "./images/info.png" alt = "info"></a>
+								<div class = "listall">
+									<a href = "" class = "call_message call" alt = "call"><img src = "./images/call.png" alt = "call"></a>
+									<a href = "" class = "call_message message" alt = "message"> <img src = "./images/sms.png"	alt = "message"></a>
+								</div>
+						</div>
+					</div>
+						<div class = "block_footer list	">
+									<div class="listing__switchers">
                         <input id="firstSlide" type="radio" name="page" value="1">
                         <label for="firstSlide"></label>
                         <input id="secondSlide" type="radio" name="page" value="2">
                         <label for="secondSlide"></label>
                     </div>
-                </div>
-                <div class="content__metrovka">
-                    <div class="content__metrovka_wrapper">
-                        <div class="telegram__header metrovka">
-                            <p class="telegram__header_title">Блог Metrovka</p>
-                            <p class="telegram__header_text">Хитрости, приемы, советы, фото и видео – все о том как продать,
-                                купить, сдать в аренду или арендовать недвижимость. </p>
-                        </div>
-                        <div class="metrovka__news">
-                            <div class="metrovka__news__item">
-                                <div class="apartment__logo largePicture">
-                                    <div class="apartment__logo_ovals">
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                    </div>
-                                    <img src="./images/metrovkaFirstApartment.svg" alt="apartment_picture">
-                                </div>
-                                <div class="metrovka__news__item__text">
-                                    <p class="metrovka_violet metrovka__news__item__text_title">Лайфхак</p>
-                                    <div class="metrovka__news__item__text_content">
-                                        <p class="black">Киевляне могут оплатить коммуналку через Facebook…</p>
-                                    </div>
-                                </div>
-                                <p class="metrovka__news__item_footer">
-                                    Татьяна Малыняк • 5 мин чтения
-                                </p>
-                            </div>
-                            <div class="metrovka__news__item">
-                                <div class="apartment__logo largePicture">
-                                    <div class="apartment__logo_ovals">
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                    </div>
-                                    <img src="./images/metrovkaSecondApartment.svg" alt="apartment_picture">
-                                </div>
-                                <div class="metrovka__news__item__text">
-                                    <p class="metrovka_green metrovka__news__item__text_title">Cовет Metrovka</p>
-                                    <div class="metrovka__news__item__text_content">
-                                        <p class="black">ТОП-5 самых дешевых квартир Киева</p>
-                                    </div>
-                                </div>
-                                <p class="metrovka__news__item_footer">
-                                    Татьяна Малыняк • 4 мин чтения
-                                </p>
-                            </div>
-                            <div class="metrovka__news__item">
-                                <div class="apartment__logo largePicture">
-                                    <div class="apartment__logo_ovals">
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                        <div class="apartment__logo_oval"></div>
-                                    </div>
-                                    <img src="./images/metrovkaThirdApartment.svg" alt="apartment_picture">
-                                </div>
-                                <div class="metrovka__news__item__text">
-                                    <p class="metrovka_blue metrovka__news__item__text_title">Технологии</p>
-                                    <div class="metrovka__news__item__text_content">
-                                        <p class="black">Смарт квартиры: цены, предложения и законность</p>
-                                    </div>
-                                </div>
-                                <p class="metrovka__news__item_footer">
-                                    Татьяна Малыняк • 2 мин чтения
-                                </p>
-                            </div>
-                        </div>
+							<div class = "moveright">
+									<a href = "#" class = "block_greyfont">След. раздел &rarr;</a> <br>	
+									<a href = "#" class = "blackfont">Инфраструктура</a>
+								</div>
+						</div>
+					</div>
+					<div class = "whiteback">
+					<div class = "list">
+						<div class = "photo otherblocks">
+							<img src = "./images/flat2.png" alt = "flat">
+						</div>
+						<div class = "description">
+							<h4>2 комн., Оболонский р-н, Полярная 20</h4>
+							<div class = "listall">	
+								<img class = "metropoint" src = "./images/metroblue.png" alt = "metro">
+								<h5>Героев Днепра </h5>
+								<h6 class = "block_greyfont"> 10 мин. пешком</h6>
+							</div>
+							<h6 class = "block_greyfont">Особенности</h6>
+							<p class = "block_greyfont">78 кв.м. этаж 2 из 5</p>
+							<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица</p>
+						</div>
+						<div class = "contacts otherblocks">
+								<p>10 500 грн<br>
+								<span class = "block_greyfont">420$ <u>курс</u></span></p>
+								<a class = "lowprice">Хорошая цена <img src = "./images/info.png" alt = "info"></a>
+								<div class = "listall">
+									<a href = "" class = "call_message call" alt = "call"><img src = "./images/call.png" alt = "call"></a>
+									<a href = "" class = "call_message message" alt = "message"> <img src = "./images/sms.png"	alt = "message"></a>
+								</div>
+						</div>
+					</div>
+						<div class = "block_footer list	">
+							<div class="listing__switchers">
+                        <input id="firstSlide" type="radio"  name="page"  value="1">
+                        <label  class="contentswitchers" for="firstSlide"></label>
+                        <input id="secondSlide" type="radio" name="page" value="2">
+                        <label for="secondSlide"></label>
                     </div>
-                    <div class="offers__best_footer">
-                        <a href="#">Перейти на страницу блога</a>
+								<div class = "moveright">
+									<a href = "#" class = "block_greyfont">След. раздел &rarr;</a> <br>	
+									<a href = "#" class = "blackfont">Инфраструктура</a>
+								</div>
+						</div>
+					</div>
+					<div class = "whiteback">
+					<div class = "list">
+						<div class = "photo otherblocks">
+							<img src = "./images/flat3.png" alt = "flat">
+						</div>
+						<div class = "description">	
+							<h4>2 комн., Оболонский р-н, Полярная 20</h4>
+							<div class = "listall">
+								<img class = "metropoint" src = "./images/metroblue.png" alt = "metro">
+								<h5>Героев Днепра </h5>
+								<h6 class = "block_greyfont"> 10 мин. пешком</h6>
+							</div>
+							<h6 class = "block_greyfont">Особенности</h6>
+							<p class = "block_greyfont">78 кв.м. этаж 2 из 5</>
+							<p>Без комунальных, евроремонт, хозяева в Польше, 15 мин. до озера, кофеварка, уборщица</p>
+						</div>
+						<div class = "contacts otherblocks">
+								<p>10 500 грн<br>
+								<span class = "block_greyfont">420$ <u>курс</u></span></p>
+								<a class = "lowprice">Хорошая цена <img src = "./images/info.png" alt = "info"></a>
+								<div class = "listall">
+									<a href = "" class = "call_message call" alt = "call"><img src = "./images/call.png" alt = "call"></a>
+									<a href = "" class = "call_message message" alt = "message"> <img src = "./images/sms.png"	alt = "message"></a>
+								</div>
+						</div>
+					</div>
+						<div class = "block_footer list	">
+							<div class="listing__switchers">
+                        <input id="firstSlide" type="radio"  name="page" value="1">
+                        <label for="firstSlide"></label>
+                        <input id="secondSlide" type="radio" name="page" value="2">
+                        <label for="secondSlide"></label>
                     </div>
-                </div>
-        </div>
-    </div>
+								<div class = "moveright">
+									<a class = "block_greyfont" href = "#">След. раздел &rarr;</a> <br>	
+									<a href = "#" class = "blackfont">Инфраструктура</a>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class = "c_hidden rightpart">
+					<iframe class = "c_hidden" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2540.633156649982!2d30.52050781284806!3d50.44793334168823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1492193149288" width="350" height="591" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		
         <div class="footer">
             <div class="footer__content">
                 <div class="footer__content__item">
@@ -560,8 +244,8 @@
             </div>
             <img src="./images/metrovkaFooterLogo.svg" alt="metrovka_logo">
         </div>
-    </div>
-    <div class="windowForModal">
+	</div>
+	    <div class="windowForModal">
         <div class="modal">
             <div class="modal__wrapper">
                 <div class="leave__application">
@@ -632,6 +316,5 @@
             <img class="modal_closeButton" src="./images/closeModal.svg" alt="close">
         </div>
     </div>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
-</html>

@@ -1,17 +1,14 @@
 @import "../utilities/_index";
 
-.content{
+  .content{
   width:890px;
-  height:2607px;
-  //margin: 22px 0px 0px 122px;
   margin-top: 22px;
 }
 .content_realty{
-  height:1163px;
 }
 .realty_search{
   background-color: #FFFFFF;
-  height:295px;
+  //height:295px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -176,7 +173,7 @@
   width:100%;
   display: flex;
   justify-content: space-between;
-  height: 248px;
+  //height: 248px;
 }
 .content__title_best, .offers__best_footer{
   display: flex;
@@ -312,7 +309,7 @@
 }
 .content__telegram{
   width: 100%;
-  height:806px;
+  //height:806px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,8 +322,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 139px;
+ // height: 139px;
   overflow: hidden;
+  padding: 20px;   
   &_title,&_text{
     font-family: $font;
     color: #152935;
@@ -343,10 +341,11 @@
 }
 .telegram__content{
   width: 100%;
-  height: 573px;
+ // height: 573px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   &_picture{
     width: 49.543%;
     display: flex;
@@ -354,11 +353,12 @@
   }
   &__info{
     width:48.930%;
-    height: 447.55px;
+    //height: 447.55px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
+    padding: 20px;
 
     &_join{
       width: 89.888%;
@@ -380,7 +380,7 @@
 
     &_inner{
       width:81.750%;
-      height: 342px;
+      //height: 342px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -400,7 +400,7 @@
     }
     &__text{
       width:100%;
-      height: 176px;
+      //height: 176px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -417,7 +417,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        height: 124px;
+        //height: 124px;
         width: 100%;
         counter-reset: section;
         margin-left: 4px;
@@ -489,7 +489,7 @@
 }
 .content__metrovka{
   width:100%;
-  height:518px;
+  //height:518px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -504,15 +504,19 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    height: 418px;
+    //height: 418px;
   }
 }
-.metrovka__news{
+  .metrovka{
+  height: 92px;
+  width:56.132%;
+  } 
+  .metrovka__news{
   width:100%;
-  height:306px;
+  //height:306px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   &__item{
     width:32.075%;
     display: flex;
@@ -552,8 +556,132 @@
     }
   }
 }
-.metrovka{
-  height: 92px;
-  width:56.132%;
+.hidden{
+
+}  
+
+ .rehidden{
+    display: none !important;
+    visibility: hidden;
+    transform: scale(0);
+}
+//listing
+@import "../utilities/_index";
+.content{
+  width: 100%;
+}
+.title1{
+  color: #2573D8;
+  padding: 10px;
+}
+.title2{
+  color: #152935;
+  padding: 20px 20px 20px 10px; 
+  font-weight: bold;
+}
+.contlist{
+margin-top: 0px;
+display: flex;
+justify-content: flex-end;
+text-align: right;
+.c_hidden{
+  }
+li{
+  padding-left: 50px;
+  color: #8C9BA5;
+}
 }
 
+.leftpart{
+ width: 100%;
+}
+.photo{
+  width: 241.35px;
+  height: 167.39px;
+}
+.description{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  line-height:30px;
+  h4{
+    color: blue;
+  }
+ }
+.contacts{
+  text-align: right;
+ }
+.block_footer{
+    margin: auto;
+ }
+.lowprice{
+  background-color: #EAFFF5;
+  color: #30AD64;
+  padding: 10px;
+  display:flex;
+  img{
+  height: 20px;
+  margin-top: 8px;
+  }
+}
+.highprice{
+  background-color: #FFEFEA;
+  color: #D00202;
+  padding: 10px;
+  display:flex;
+  img{
+  height: 20px;
+  margin-top: 8px;
+  }
+}
+.otherblocks{
+  line-height:30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  text-align: right;
+  padding-right: 15px;
+}
+.moveright{
+  padding-left: 300px;
+}
+.call_message{
+  position: relative;
+  padding-top: 30px;
+  margin-top: 10%;
+}
+.call{
+  padding-left: 40%;
+  margin:auto;
+}
+.message{
+  padding-left: 20%;
+  margin:auto;
+}
+.whiteback{
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: white;
+}
+.greyfont{
+  color: #8C9BA5; 
+  margin-left: 20px;   
+}
+.blackfont{
+ color: black;
+}
+.block_greyfont{
+  color: #B1B1B1;
+}
+.listing__switchers{
+  display: flex;
+  padding-left: 400px;
+}
+.metropoint{
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: 10px;
+}
+   .c_hidden{
+  }

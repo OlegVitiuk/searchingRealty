@@ -25,7 +25,7 @@ gulp.task('sass', function(){ // Создаем таск Sass
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
         server: { // Определяем параметры сервера
-            baseDir: 'app' // Директория для сервера - app
+            baseDir: '.' // Директория для сервера 
         },
         browser: ["chrome"],
         notify: false// Отключаем уведомления
@@ -46,7 +46,7 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('watch', ['browser-sync','sass'], function() {
     gulp.watch('app/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('app/js/*.js', browserSync.reload); // Наблюдение за js файлами в папке js
-    gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
+    gulp.watch('./*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 });
 
 gulp.task('clean', function() {
@@ -75,7 +75,7 @@ gulp.task('build', ['clean', 'img', 'sass'], function() {
     var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
         .pipe(gulp.dest('dist/fonts'))
 
-    var buildHtml = gulp.src('app/*.html') // Переносим HTML в продакшен
+    var buildHtml = gulp.src('./*.html') // Переносим HTML в продакшен
         .pipe(gulp.dest('dist'));
 
 });

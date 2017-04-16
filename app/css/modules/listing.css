@@ -1,0 +1,65 @@
+.content {
+  width: 100%; }
+
+.title1 {
+  color: #2573D8;
+  padding: 10px; }
+
+.title2 {
+  color: #152935;
+  padding: 20px 20px 20px 10px;
+  font-weight: bold; }
+
+.contlist {
+  margin-top: 0px;
+  text-align: right; }
+  .contlist li {
+    padding-left: 50px;
+    color: #8C9BA5; }
+
+.leftpart {
+  width: 80%; }
+
+.photo {
+  width: 241.35px;
+  height: 167.39px; }
+
+.description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  line-height: 30px; }
+  .description h4 {
+    color: blue; }
+
+.contacts {
+  text-align: right; }
+
+.block_footer {
+  margin: auto; }
+
+.lowprice {
+  background-color: #EAFFF5;
+  color: #30AD64;
+  padding: 10px; }
+  .lowprice img {
+    margin-top: 15px; }
+
+.highprice {
+  background-color: #FFEFEA;
+  color: #D00202;
+  padding: 10px; }
+  .highprice img {
+    margin-top: 15px; }
+
+.otherblocks {
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  text-align: right;
+  align: right;
+  padding-right: 15px; }
+
+.moveright {
+  padding-left: 300px; }
