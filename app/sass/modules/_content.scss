@@ -1,10 +1,13 @@
 @import "../utilities/_index";
 
   .content{
-  width:890px;
+  width: 100%;
   margin-top: 22px;
+  margin: auto;
 }
 .content_realty{
+    margin: auto;
+    width:890px;
 }
 .realty_search{
   background-color: #FFFFFF;

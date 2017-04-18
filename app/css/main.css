@@ -76,16 +76,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@media (min-width: 360px) {
-  .page, .content, .footer, .header, .leftpart, .rightpart {
-    width: auto; } }
-
 @media (max-width: 890px) {
-  .header, .header__menu, .header_content,
-  .content__search, .select__header,
-  .choose__city__content_select-item,
-  .selectItem_header, .choose__city__content_select {
-    width: 100%; }
+  .header, .footer, .header__menu, .header_content,
+  .content__search, .realty_search, .content, .content__metrovka_wrapper,
+  .content_telegram, .metrovka__news, .telegram__header_text,
+  .telegram__header, .content__metrovka {
+    width: 100% !important;
+    height: auto !important; }
+  .telegram__header_menu, .select__header, .choose__rooms, .choose__city,
+  .choose__city__content_select-item, .content__search_start,
+  .selectItem_header, .choose__city__content_select,
+  .telegram__content__info {
+    width: 100% !important; }
+  .choose__rooms_item {
+    padding: 2px !important; }
+  .metrovka__news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -105,30 +119,27 @@ table {
   .whiteback {
     margin-bottom: 5px; }
   .apartments {
-    overflow-x: auto; }
+    overflow-x: auto;
+    overflow-y: hidden; }
   .h_hidden {
     display: none !important;
     visibility: hidden;
     -webkit-transform: scale(0);
         -ms-transform: scale(0);
             transform: scale(0); }
-  .footer {
-    width: 100%; }
-    .footer__content {
-      width: 100%;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      text-align: center; }
-  .content {
-    width: 890px;
-    margin-top: 22px; }
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .content_realty {
+    width: 100% !important; }
   .content__search {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -146,177 +157,11 @@ table {
         -ms-transform: scale(0);
             transform: scale(0); }
   .realty_search {
-    background-color: #FFFFFF;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    count-column: 2;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    z-index: 1; }
-  .telegram__header {
-    width: 56.63%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    count-column: 2;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .telegram__content {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    count-column: 2;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .content__metrovka {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: around;
-    -webkit-justify-content: around;
-        -ms-flex-pack: around;
-            justify-content: around;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #FFFFFF;
-    margin-top: 60px; }
-    .content__metrovka_wrapper {
-      width: 95.280%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding-top: 20px; }
-  .metrovka {
-    height: 92px;
-    width: 56.132%; }
-  .metrovka__news {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-    .metrovka__news__item {
-      width: 32.075%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .metrovka__news__item_footer {
-        color: #8C9BA5;
-        font-family: "Open Sans";
-        font-size: 12px;
-        line-height: 16px; }
-      .metrovka__news__item__text {
-        width: 100%;
-        height: 68px;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around; }
-        .metrovka__news__item__text_title {
-          line-height: 16px;
-          font-size: 11px;
-          font-family: "Open Sans";
-          text-transform: uppercase; }
-        .metrovka__news__item__text_content {
-          width: 100%;
-          height: 48px;
-          overflow: hidden; }
-          .metrovka__news__item__text_content p {
-            line-height: 24px;
-            font-size: 16px;
-            overflow: hidden;
-            font-family: "Open Sans"; } }
+            flex-direction: column-reverse; } }
 
 @media (min-width: 890px) and (max-width: 1280px) {
   .header, .header__menu, .header_content,
@@ -380,8 +225,13 @@ table {
     width: 70% !important; } }
 
 .content {
-  width: 890px;
-  margin-top: 22px; }
+  width: 100%;
+  margin-top: 22px;
+  margin: auto; }
+
+.content_realty {
+  margin: auto;
+  width: 890px; }
 
 .realty_search {
   background-color: #FFFFFF;
@@ -1372,10 +1222,9 @@ table {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
     .footer__content__item {
       width: 23.933%;
       display: -webkit-box;
