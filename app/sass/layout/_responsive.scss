@@ -3,7 +3,7 @@
  .header,.footer,.header__menu,.header_content,
  .content__search,.realty_search,.content,.content__metrovka_wrapper,
  .content_telegram,.metrovka__news,.telegram__header_text,
- .telegram__header,.content__metrovka {
+ .telegram__header,.content__metrovka,.footer__content {
     width: 100% !important;
     height: auto !important;
   }
@@ -15,6 +15,16 @@
  }
  .choose__rooms_item{
  padding: 2px !important;
+ }
+ .footer__content__item{
+  width: auto !important;
+  padding: 10px;
+ }
+ .choose__city,.choose__rooms{
+  padding: 15px;
+ }
+ .footer__content__item_networks{
+ align-items: center !important;
  }
  .metrovka__news{
   flex-direction: column;
@@ -131,12 +141,12 @@
 
 @media(max-width: 580px){
   .fullwide{
-    width: 95% !important;
+    width: 100% !important;
   }
   .partwide{
     width: 35% !important;
   }
   .halfwide{
-    width: 70% !important;
+    width: 85% !important;
   }
 }
