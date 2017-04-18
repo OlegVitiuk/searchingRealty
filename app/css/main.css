@@ -98,6 +98,8 @@ table {
     padding: 15px; }
   .footer__content__item_networks {
     width: auto !important; }
+  .choose__rooms_item {
+    margin-left: 4px !important; }
   .metrovka__news {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -108,6 +110,11 @@ table {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .telegram__content__into__text_list {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+  .black {
+    margin-top: 10px; }
   .list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1513,7 +1520,8 @@ table {
 .content__title {
   font-size: 32px;
   letter-spacing: -1px;
-  line-height: 38.92px; }
+  line-height: 38.92px;
+  padding-bottom: 10px; }
 
 .content__search {
   display: -webkit-box;
@@ -1528,7 +1536,8 @@ table {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  margin-top: 10px; }
 
 .choose__city {
   width: 38.651%;

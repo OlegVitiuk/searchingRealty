@@ -132,4 +132,5 @@ $(document).ready(function(){
 	$(".modal_leaveApplication, .modal_closeButton").on("click",function () {
 		$(".windowForModal").css("display","none");
 	});
+
 });
