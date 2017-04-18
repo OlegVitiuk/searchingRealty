@@ -104,6 +104,8 @@ table {
     text-align: left; }
   .whiteback {
     margin-bottom: 5px; }
+  .apartments {
+    overflow-x: auto; }
   .h_hidden {
     display: none !important;
     visibility: hidden;
@@ -132,7 +134,11 @@ table {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important; }
   .hidden {
     display: none !important;
     visibility: hidden;
@@ -329,7 +335,7 @@ table {
 
 @media (max-width: 1280px) {
   .rightpart {
-    width: 0%; }
+    width: 0% !important; }
   .leftpart {
     width: 100%; }
   .c_hidden {
@@ -365,12 +371,21 @@ table {
   .page {
     width: 100%; } }
 
+@media (max-width: 580px) {
+  .fullwide {
+    width: 95% !important; }
+  .partwide {
+    width: 35% !important; }
+  .halfwide {
+    width: 70% !important; } }
+
 .content {
   width: 890px;
   margin-top: 22px; }
 
 .realty_search {
   background-color: #FFFFFF;
+  height: 295px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -538,6 +553,7 @@ table {
   position: relative; }
 
 .content__realty__offers {
+  height: 848px;
   width: 100%; }
   .content__realty__offers_best, .content__realty__offers_last {
     width: 100%;
@@ -560,7 +576,8 @@ table {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    height: 384px; }
   .content__realty__offers_best {
     height: 384px; }
   .content__realty__offers_last {
@@ -601,7 +618,8 @@ table {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  height: 248px; }
 
 .content__title_best, .offers__best_footer {
   display: -webkit-box;
@@ -808,6 +826,7 @@ table {
 
 .content__telegram {
   width: 100%;
+  height: 806px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -846,6 +865,7 @@ table {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 139px;
   overflow: hidden;
   padding: 20px; }
   .telegram__header_title, .telegram__header_text {
@@ -853,7 +873,8 @@ table {
     color: #152935;
     overflow: inherit; }
   .telegram__header_title {
-    font-size: 24px; }
+    font-size: 24px;
+    padding: 10px; }
   .telegram__header_text {
     font-size: 14px;
     line-height: 20px;
@@ -861,6 +882,7 @@ table {
 
 .telegram__content {
   width: 100%;
+  height: 573px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -886,6 +908,7 @@ table {
             justify-content: center; }
   .telegram__content__info {
     width: 48.930%;
+    height: 447.55px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -928,6 +951,7 @@ table {
               box-sizing: border-box; }
     .telegram__content__info_inner {
       width: 81.750%;
+      height: 342px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -965,6 +989,7 @@ table {
         margin-left: 20px; }
     .telegram__content__info__text {
       width: 100%;
+      height: 176px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1002,6 +1027,7 @@ table {
         -webkit-align-items: flex-start;
             -ms-flex-align: start;
                 align-items: flex-start;
+        height: 124px;
         width: 100%;
         counter-reset: section;
         margin-left: 4px; }
@@ -1085,6 +1111,7 @@ table {
 
 .content__metrovka {
   width: 100%;
+  height: 518px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1123,7 +1150,8 @@ table {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 20px; }
+    padding-top: 20px;
+    height: 418px; }
 
 .metrovka {
   height: 92px;
@@ -1131,6 +1159,7 @@ table {
 
 .metrovka__news {
   width: 100%;
+  height: 306px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
