@@ -3,14 +3,15 @@
  .header,.footer,.header__menu,.header_content,
  .content__search,.realty_search,.content,.content__metrovka_wrapper,
  .content_telegram,.metrovka__news,.telegram__header_text,
- .telegram__header,.content__metrovka,.footer__content {
+ .telegram__header,.content__metrovka,.footer__content,.description,
+ .otherblocks {
     width: 100% !important;
     height: auto !important;
   }
   .telegram__header_menu,.select__header,.choose__rooms,.choose__city,
  .choose__city__content_select-item,.content__search_start,
  .selectItem_header,.choose__city__content_select,
- .telegram__content__info{
+ .telegram__content__info,.footer__content__item_navigation{
   width: 100% !important;
  }
  .choose__rooms_item{
@@ -18,13 +19,14 @@
  }
  .footer__content__item{
   width: auto !important;
-  padding: 10px;
+  padding: 20px;
  }
+
  .choose__city,.choose__rooms{
   padding: 15px;
  }
  .footer__content__item_networks{
- align-items: center !important;
+    width: auto !important;
  }
  .metrovka__news{
   flex-direction: column;
@@ -33,8 +35,16 @@
 .list{
       display: flex;
       flex-direction: column;
-      align-items: center;  
+      //align-items: center;  
+      padding: 10px;
       }
+  .moveright{
+    padding-top: 10px;
+    padding-left: 0px !important;
+  }
+  .call_message{
+    padding-left: 10px !important;
+  }
   .oterblocks{
     text-align: left;
   }
@@ -78,6 +88,13 @@
 .realty_search{
   flex-direction:column-reverse;
 }
+.listing__switchers{
+  justify-content: center;
+  padding-left: 0px !important;
+}
+.otherblocks{
+  text-align: left !important;
+}
 }
 @media(min-width: 890px) and (max-width: 1280px){
     .header,.header__menu,.header_content,
@@ -87,7 +104,6 @@
     width: 100%;
   }
 }
-
 @media(min-width:1280px){
   .rightpart{
     margin-top: 110px;
@@ -98,6 +114,9 @@
   }
   .leftpart{
  width: 80%;
+}
+.description{
+  padding-left: 15px;
 }
 }
 
@@ -118,12 +137,11 @@
   height:74%;
 }
 }
- .listall{
-      display: flex;
-    }
+
 @media(min-width: 890px){
     .list{
       display: flex;
+      justify-content: space-between;
     }
     .h_rehidden{
     display: none !important;

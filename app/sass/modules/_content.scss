@@ -587,6 +587,7 @@
 margin-top: 0px;
 display: flex;
 justify-content: flex-end;
+align-items: flex-end;
 text-align: right;
 .c_hidden{
   }
@@ -623,16 +624,23 @@ li{
   color: #30AD64;
   padding: 10px;
   display:flex;
+  justify-content: flex-end;
   img{
   height: 20px;
   margin-top: 8px;
   }
 }
+ .listall{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
 .highprice{
   background-color: #FFEFEA;
   color: #D00202;
   padding: 10px;
   display:flex;
+  justify-content: flex-end;
   img{
   height: 20px;
   margin-top: 8px;
