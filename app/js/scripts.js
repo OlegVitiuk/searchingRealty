@@ -132,5 +132,7 @@ $(document).ready(function(){
 	$(".modal_leaveApplication, .modal_closeButton").on("click",function () {
 		$(".windowForModal").css("display","none");
 	});
-
+	$(".hamb_on").on("click",function () {
+		$(".hamburger__actions").css("display","block");
+	});
 });
