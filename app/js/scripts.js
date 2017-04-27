@@ -135,9 +135,6 @@ $(document).ready(function(){
 	$(".hamb_on").on("click",function () {
 		$(".hamburger__actions").css("display","block");
 	});
-	// $(".js-example-basic-single").select2({
-	// 	allowClear: true
-	// });
 
 	function matchStart (term, text) {
 		if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
@@ -150,8 +147,50 @@ $(document).ready(function(){
 		$(".js-example-basic-single").select2({
 			matcher: oldMatcher(matchStart),
 			placeholder: "Киев",
-			allowClear: true
+			allowClear: true,
+			data: [
+				{
+					id: 'value',
+					text: 'Text to display'
+				},
+				// ... more data objects ...
+			]
 		})
+	});
+
+	//new select
+	$(".select2-container").on("click",function () {
+			$(".select2-dropdown").css({"border-left" :"2px solid #30AE63",
+				"border-right":"2px solid #30AE63","border-bottom":"2px solid #30AE63",
+				"box-shadow":"0 5px 10px rgba(0,0,0,0.22)"});
+
+
+			// $(this).removeClass("unchecked");
+			// $(".selectVisibleArrow_header").attr("src","images/selectArrowOutwards.png");
+			// $(this).css("border-top","2px solid #30AE63").css("border-left","2px solid #30AE63").css("border-right","2px solid #30AE63").
+			// css("border-radius",0);
+			// $(".choose__city__content_select-item").last().css("border-bottom","2px solid #30AE63");
+
+		// else{
+		// 	$(".choose__city__content_select-item").css("display", "none");
+		// 	$(this).addClass("unchecked");
+		// 	$(".selectVisibleArrow_header").attr("src","images/selectArrow.png");
+		// 	$(this).css("border-top","2px solid #dfe3e6").css("border-left","2px solid #dfe3e6").css("border-right","2px solid #dfe3e6").
+		// 	css("border-radius","3px");
+		// }
+	});
+	$(".choose__city__content_select-item").hover(function () {
+		$(".choose__city__content_select-item").css("border",0);
+		$(".select__header").css("border","2px solid #dfe3e6");
+	});
+	$(".choose__city__content_select-item").on("click",function () {
+		var selectedItem = $(this).text().trim();
+		$(".select__header .selectVisibleText_header").text(selectedItem);
+		$(".choose__city__content_select-item").css("display", "none");
+		$(".select__header").addClass("unchecked");
+		$(".selectVisibleArrow_header").attr("src","images/selectArrow.png");
+		$(".select__header").css("border-top","2px solid #dfe3e6").css("border-left","2px solid #dfe3e6").css("border-right","2px solid #dfe3e6").
+		css("border-radius","3px");
 	});
 
 });

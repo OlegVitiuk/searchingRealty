@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95881331-ed37-41b2-9624-10025faf48a8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/css/main.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/modules/select2.css" afterPath="$PROJECT_DIR$/app/css/modules/select2.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.js" afterPath="$PROJECT_DIR$/app/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.css" afterPath="$PROJECT_DIR$/app/sass/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.css.map" afterPath="$PROJECT_DIR$/app/sass/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="searchingRealty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,37 +39,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
               <folding>
-                <marker date="1493317735646" expanded="false" signature="79:323" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="368:680" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="767:1338" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="1345:1684" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="1749:1870" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="1937:2421" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="2500:3065" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="3072:3404" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="3469:3582" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="3649:4516" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="4564:5499" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="5554:5667" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="5727:6187" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="6238:6361" ph="{...}" />
-                <marker date="1493317735646" expanded="false" signature="6437:6487" ph="{...}" />
+                <element signature="e#368#680#0" expanded="false" />
+                <element signature="e#729#1687#0" expanded="false" />
+                <element signature="e#8117#8238#0" expanded="false" />
+                <element signature="e#8305#8777#0" expanded="false" />
+                <marker date="1493329768982" expanded="false" signature="1345:1684" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="1749:1870" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="1937:2421" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="2500:3065" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="3072:3404" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="3469:3582" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="3649:4516" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="4564:5499" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="5554:5667" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="5727:6187" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="6238:6361" ph="{...}" />
+                <marker date="1493329768982" expanded="false" signature="6437:6487" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select2.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/utilities/variables/_index.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="18" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select2.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/css/modules/select2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
+            <state relative-caret-position="68">
+              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -129,8 +145,8 @@
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/css/modules/select2.css" />
+        <option value="$PROJECT_DIR$/app/js/scripts.js" />
       </list>
     </option>
   </component>
@@ -205,6 +221,94 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utilities" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="variables" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchingRealty" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -360,12 +464,12 @@
       <workItem from="1492256058215" duration="233000" />
       <workItem from="1492285147315" duration="2015000" />
       <workItem from="1492288212608" duration="905000" />
-      <workItem from="1493311748335" duration="6487000" />
+      <workItem from="1493311748335" duration="13124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263032000" />
+    <option name="totallyTimeSpent" value="269669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -519,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/utilities/variables/_index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/utilities/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -592,14 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="443" column="17" selection-start-line="443" selection-start-column="17" selection-end-line="443" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,6 +774,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="153" column="2" selection-start-line="153" selection-start-column="2" selection-end-line="153" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/utilities/variables/_index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -693,35 +798,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/scripts.js">
+    <entry file="file://$PROJECT_DIR$/app/css/modules/select2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
-          <folding>
-            <marker date="1493317735646" expanded="false" signature="79:323" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="368:680" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="767:1338" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="1345:1684" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="1749:1870" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="1937:2421" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="2500:3065" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="3072:3404" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="3469:3582" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="3649:4516" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="4564:5499" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="5554:5667" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="5727:6187" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="6238:6361" ph="{...}" />
-            <marker date="1493317735646" expanded="false" signature="6437:6487" ph="{...}" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/modules/select2.css">
+    <entry file="file://$PROJECT_DIR$/app/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="180" column="7" selection-start-line="180" selection-start-column="7" selection-end-line="180" selection-end-column="7" />
+          <folding>
+            <element signature="e#368#680#0" expanded="false" />
+            <element signature="e#729#1687#0" expanded="false" />
+            <element signature="e#8117#8238#0" expanded="false" />
+            <element signature="e#8305#8777#0" expanded="false" />
+            <marker date="1493329768982" expanded="false" signature="1345:1684" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="1749:1870" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="1937:2421" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="2500:3065" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="3072:3404" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="3469:3582" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="3649:4516" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="4564:5499" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="5554:5667" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="5727:6187" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="6238:6361" ph="{...}" />
+            <marker date="1493329768982" expanded="false" signature="6437:6487" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
