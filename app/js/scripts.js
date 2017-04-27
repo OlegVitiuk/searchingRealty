@@ -135,4 +135,23 @@ $(document).ready(function(){
 	$(".hamb_on").on("click",function () {
 		$(".hamburger__actions").css("display","block");
 	});
+	// $(".js-example-basic-single").select2({
+	// 	allowClear: true
+	// });
+
+	function matchStart (term, text) {
+		if (text.toUpperCase().indexOf(term.toUpperCase()) == 0) {
+			return true;
+		}
+		return false;
+	}
+
+	$.fn.select2.amd.require(['select2/compat/matcher'], function (oldMatcher) {
+		$(".js-example-basic-single").select2({
+			matcher: oldMatcher(matchStart),
+			placeholder: "Киев",
+			allowClear: true
+		})
+	});
+
 });

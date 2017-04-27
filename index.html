@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>searchingRealty</title>
     <link rel="stylesheet" href="app/css/main.css">
+    <link rel="stylesheet" href="app/css/modules/select2.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="app/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="app/js/scripts.js"></script>
+    <script type="text/javascript" src="app/js/select2.full.js"></script>
 </head>
 <body>
     <div class="page">
@@ -47,43 +50,57 @@
                     <div class="halfwide content__search">
                         <div class="choose__city">
                             <p class="choose__city_title">Выберите город</p>
-                            <ul class="choose__city__content_select">
-                                <li>
-                                    <div class="select__header unchecked">
-                                        <p class="selectVisibleText_header">Киев</p>
-                                        <img class="selectVisibleArrow_header" src="images/selectArrow.png" alt="arrow">
-                                    </div>
-                                    <ul>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Киев</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Харьков</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Львов</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Сумы</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
 
-                            <!--<select class="choose__city_selector">-->
-                            <!--<option value="1">Киев</option>-->
-                            <!--<option value="1">Лондон</option>-->
-                            <!--<option value="2">Берлин</option>-->
-                            <!--<option value="3">Москва</option>-->
-                            <!--</select>-->
+                            <select class="js-example-basic-single">
+                                <option value="AL">Alabama</option>
+                                <option value="AL">Plabama</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <!--<ul class="choose__city__content_select">-->
+                                <!--<li>-->
+                                    <!--<div class="select__header unchecked">-->
+                                        <!--<p class="selectVisibleText_header">Киев</p>-->
+                                        <!--<img class="selectVisibleArrow_header" src="images/selectArrow.png" alt="arrow">-->
+                                    <!--</div>-->
+                                    <!--<ul>-->
+                                        <!--<li class="choose__city__content_select-item">-->
+                                            <!--<div class="selectItem_header">-->
+                                                <!--<p class="selectVisibleText_header">Киев</p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="choose__city__content_select-item">-->
+                                            <!--<div class="selectItem_header">-->
+                                                <!--<p class="selectVisibleText_header">Харьков</p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="choose__city__content_select-item">-->
+                                            <!--<div class="selectItem_header">-->
+                                                <!--<p class="selectVisibleText_header">Львов</p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                        <!--<li class="choose__city__content_select-item">-->
+                                            <!--<div class="selectItem_header">-->
+                                                <!--<p class="selectVisibleText_header">Сумы</p>-->
+                                            <!--</div>-->
+                                        <!--</li>-->
+                                    <!--</ul>-->
+                                <!--</li>-->
+                            <!--</ul>-->
                         </div>
                         <div class="choose__rooms">
                             <p class="choose-rooms-title">Кол-во комнат</p>
@@ -683,7 +700,5 @@
                     </li>
                 </ul>
     </div>
-
-    <script type="text/javascript" src="app/js/scripts.js"></script>
 </body>
 </html>
