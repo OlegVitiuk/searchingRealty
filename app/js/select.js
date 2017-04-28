@@ -84,7 +84,12 @@ if(typeof Object.create !== 'function'){
                             "border-right":"2px solid #dfe3e6",
                             "border-radius":"3px"
                         });
-                        arrow.attr("src","images/selectArrow.png");
+
+                        if(self.$elem.hasClass("InputFlag")){
+                            arrow.attr("src","images/selectArrowOutwards.png");
+                        }else {
+                            arrow.attr("src", "images/selectArrow.png");
+                        }
                     });
             },
 
@@ -134,23 +139,18 @@ if(typeof Object.create !== 'function'){
                 switch(e.which)
                 {
                     // клавиша Esc"
-                    case 27: (function() {
-                        // console.log("esc!!");
-                        item.css("display", "none");
-                        $(this).addClass("unchecked").removeClass("InputFlag");
-                        arrow.attr("src","images/selectArrow.png");
-                        $(this).css({
-                            "border-top":"2px solid #dfe3e6",
-                            "border-left":"2px solid #dfe3e6",
-                            "border-right":"2px solid #dfe3e6",
-                            "border-radius":"3px"
-                        });
-                    })();
+                    case 27:
+                        self.hideMyItems();
                         break;
                     //клавиша Enter
-                    case 13: (function() {
-                        // console.log("enter!!");
-                    })();
+                    case 13:
+                        (function () {
+                            item.hover(function () {
+                                item.data("selectedItem",$(this).text().trim());
+                            });
+                            self.$elem.find(".selectVisibleText_header").text(item.data("selectedItem"));
+                            self.hideMyItems();
+                        })();
                         break;
                     //клавиша Down
                     case 40: (function() {
@@ -167,21 +167,24 @@ if(typeof Object.create !== 'function'){
         },
 
         hideMyItems: function () {
+            var self = this;
+
+            var arrow = $(".selectVisibleArrow_header");
+            var item =$(".choose__city__content_select-item");
+
             item.css("display", "none");
-            $(this).addClass("unchecked").removeClass("InputFlag");
-            arrow.attr("src","images/selectArrow.png");
-            $(this).css({
+            self.$elem.addClass("unchecked").removeClass("InputFlag").css({
                 "border-top":"2px solid #dfe3e6",
                 "border-left":"2px solid #dfe3e6",
                 "border-right":"2px solid #dfe3e6",
                 "border-radius":"3px"
             });
+            arrow.attr("src","images/selectArrow.png");
         }
 
 
 
     };
-
 
     $.fn.selectPlugin=function (options) {
         return this.each(function () {

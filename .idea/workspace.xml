@@ -7,6 +7,7 @@
     <list default="true" id="95881331-ed37-41b2-9624-10025faf48a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/select.js" afterPath="$PROJECT_DIR$/app/js/select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="searchingRealty.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +32,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="73" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="73" />
+            <state relative-caret-position="408">
+              <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1493413767398" expanded="true" signature="4195:4512" ph="..." />
               </folding>
             </state>
           </provider>
@@ -43,7 +45,7 @@
       <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3434">
+            <state relative-caret-position="231">
               <caret line="202" column="14" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
               <folding />
             </state>
@@ -53,7 +55,7 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="323">
               <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
               <folding>
                 <element signature="e#79#323#0" expanded="false" />
@@ -77,14 +79,16 @@
       <file leaf-file-name="select.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-341">
-              <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+            <state relative-caret-position="169">
+              <caret line="147" column="52" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
               <folding>
                 <element signature="e#234#769#0" expanded="false" />
-                <element signature="e#2549#2696#0" expanded="false" />
-                <element signature="e#3724#3810#0" expanded="false" />
-                <element signature="e#4807#4892#0" expanded="false" />
-                <element signature="e#6963#7109#0" expanded="false" />
+                <element signature="e#803#3904#0" expanded="false" />
+                <element signature="e#3930#4016#0" expanded="false" />
+                <element signature="e#4051#4980#0" expanded="false" />
+                <element signature="e#5013#5098#0" expanded="false" />
+                <element signature="e#6453#6995#0" expanded="false" />
+                <element signature="e#7048#7194#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -149,8 +153,8 @@
         <option value="$PROJECT_DIR$/app/sass/modules/_header.scss" />
         <option value="$PROJECT_DIR$/app/sass/modules/select.scss" />
         <option value="$PROJECT_DIR$/app/sass/modules/_index.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/js/scripts.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/js/select.js" />
       </list>
     </option>
@@ -404,12 +408,12 @@
       <workItem from="1492288212608" duration="905000" />
       <workItem from="1493330075180" duration="17059000" />
       <workItem from="1493387234411" duration="6087000" />
-      <workItem from="1493402066560" duration="5201000" />
+      <workItem from="1493402066560" duration="10277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="284892000" />
+    <option name="totallyTimeSpent" value="289968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -705,9 +709,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/modules/select.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="202" column="14" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1493413767398" expanded="true" signature="4195:4512" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="323">
           <caret line="111" column="39" selection-start-line="111" selection-start-column="39" selection-end-line="111" selection-end-column="39" />
           <folding>
             <element signature="e#79#323#0" expanded="false" />
@@ -727,42 +758,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/modules/select.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/modules/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3434">
-          <caret line="202" column="14" selection-start-line="202" selection-start-column="14" selection-end-line="202" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="73" selection-start-line="58" selection-start-column="56" selection-end-line="58" selection-end-column="73" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <caret line="147" column="25" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+        <state relative-caret-position="169">
+          <caret line="147" column="52" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
           <folding>
             <element signature="e#234#769#0" expanded="false" />
-            <element signature="e#2549#2696#0" expanded="false" />
-            <element signature="e#3724#3810#0" expanded="false" />
-            <element signature="e#4807#4892#0" expanded="false" />
-            <element signature="e#6963#7109#0" expanded="false" />
+            <element signature="e#803#3904#0" expanded="false" />
+            <element signature="e#3930#4016#0" expanded="false" />
+            <element signature="e#4051#4980#0" expanded="false" />
+            <element signature="e#5013#5098#0" expanded="false" />
+            <element signature="e#6453#6995#0" expanded="false" />
+            <element signature="e#7048#7194#0" expanded="false" />
           </folding>
         </state>
       </provider>
