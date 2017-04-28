@@ -1706,6 +1706,11 @@ table {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .choose__city__content_select-item input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0; }
 
 .choose__city__content_select-item:hover {
   background-color: #30AE63; }

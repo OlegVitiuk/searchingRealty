@@ -195,6 +195,14 @@
   z-index: 10;
   position: relative;
   box-sizing: border-box;
+
+  input{
+    height:100%;
+    width:100%;
+    outline: 0;
+    border: 0;
+  }
+
 }
 .choose__city__content_select-item:hover{
   background-color: #30AE63;
@@ -208,6 +216,7 @@
   align-items: center;
   position: relative;
 }
+
 .selectVisibleArrow_header{
   position: absolute;
   top:48%;
