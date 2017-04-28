@@ -32,7 +32,7 @@ if(typeof Object.create !== 'function'){
                 var arrow = $(".selectVisibleArrow_header");
 
                 self.$elem.on("click",function () {
-                    if($(this).hasClass("unchecked")) {
+                    if($(this).hasClass("unchecked") && !$(this).hasClass("InputFlag")) {
                         item.css({
                             "display": "block",
                             "border-left":"2px solid #30AE63",
@@ -50,10 +50,14 @@ if(typeof Object.create !== 'function'){
 
                     else{
                         item.css("display", "none");
-                        $(this).addClass("unchecked");
+                        $(this).addClass("unchecked").removeClass("InputFlag");
                         arrow.attr("src","images/selectArrow.png");
-                        $(this).css("border-top","2px solid #dfe3e6").css("border-left","2px solid #dfe3e6").css("border-right","2px solid #dfe3e6").
-                        css("border-radius","3px");
+                        $(this).css({
+                            "border-top":"2px solid #dfe3e6",
+                            "border-left":"2px solid #dfe3e6",
+                            "border-right":"2px solid #dfe3e6",
+                            "border-radius":"3px"
+                        });
                     }
                 });
                 item.hover(function () {
@@ -63,14 +67,13 @@ if(typeof Object.create !== 'function'){
                     .on("click",function () {
                         if($(this).hasClass("noClick")){
                             item.css("display", "block");
-                            self.addClass("unchecked");
+                            self.$elem.addClass("InputFlag");
                         } else{
                             var selectedItem = $(this).text().trim();
 
                             item.css("display", "none");
                             self.$elem.find(".selectVisibleText_header").text(selectedItem);
                             self.options.value = selectedItem;
-                            console.log(self);
                         }
                         self.$elem.addClass("unchecked").css({
                             "border-top":"2px solid #dfe3e6",
