@@ -110,6 +110,5 @@ $(document).ready(function(){
 
 
 	$(".select__header").selectPlugin({
-		autocomplete: false
     });
 });
