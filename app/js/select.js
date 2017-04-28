@@ -32,6 +32,9 @@ if(typeof Object.create !== 'function'){
                 var arrow = $(".selectVisibleArrow_header");
 
                 self.$elem.on("click",function () {
+
+                    self.listenKeyboard();
+
                     if($(this).hasClass("unchecked") && !$(this).hasClass("InputFlag")) {
                         item.css({
                             "display": "block",
@@ -121,7 +124,60 @@ if(typeof Object.create !== 'function'){
             var self = this;
 
             return self.options.value;
-             }
+             },
+
+        listenKeyboard: function () {
+            var self = this;
+            var arrow = $(".selectVisibleArrow_header");
+            var item =$(".choose__city__content_select-item");
+            $("body").keydown(function (e) {
+                switch(e.which)
+                {
+                    // клавиша Esc"
+                    case 27: (function() {
+                        // console.log("esc!!");
+                        item.css("display", "none");
+                        $(this).addClass("unchecked").removeClass("InputFlag");
+                        arrow.attr("src","images/selectArrow.png");
+                        $(this).css({
+                            "border-top":"2px solid #dfe3e6",
+                            "border-left":"2px solid #dfe3e6",
+                            "border-right":"2px solid #dfe3e6",
+                            "border-radius":"3px"
+                        });
+                    })();
+                        break;
+                    //клавиша Enter
+                    case 13: (function() {
+                        // console.log("enter!!");
+                    })();
+                        break;
+                    //клавиша Down
+                    case 40: (function() {
+                        // console.log("down!!");
+                    })();
+                        break;
+                    //клавиша Up
+                    case 38: (function() {
+                        // console.log("up!!");
+                    })();
+                        break;
+                }
+            });
+        },
+
+        hideMyItems: function () {
+            item.css("display", "none");
+            $(this).addClass("unchecked").removeClass("InputFlag");
+            arrow.attr("src","images/selectArrow.png");
+            $(this).css({
+                "border-top":"2px solid #dfe3e6",
+                "border-left":"2px solid #dfe3e6",
+                "border-right":"2px solid #dfe3e6",
+                "border-radius":"3px"
+            });
+        }
+
 
 
     };
