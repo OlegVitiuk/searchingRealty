@@ -172,6 +172,7 @@ if(typeof Object.create !== 'function'){
                             });
                             self.$elem.find(".selectVisibleText_header").text(item.data("selectedItem"));
                             self.hideMyItems();
+                            self.send_form("select");
                         })();
                         break;
                     //клавиша Down
@@ -292,8 +293,25 @@ if(typeof Object.create !== 'function'){
         // window.onwheel = null;
         window.ontouchmove = null;
         document.onkeydown = null;
-    }
+    },
 
+        //отправить данные на сервер
+        send_form: function(form_id,e) {
+        var form = $('#'+form_id);
+        var msg   = form.serialize();
+        $.ajax({
+            type: 'POST',
+            url: '', // Обработчик собственно
+            data: msg,
+            success: function(data) {
+                // запустится при успешном выполнении запроса и в data будет ответ скрипта
+            },
+            error:  function(){
+                // запустится при ошибочным выполнении запроса и в data будет ответ скрипта
+            }
+        });
+
+    }
     };
 
     $.fn.selectPlugin=function (options) {
