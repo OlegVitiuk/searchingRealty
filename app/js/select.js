@@ -34,6 +34,7 @@ if(typeof Object.create !== 'function'){
                 self.$elem.on("click",function () {
 
                     self.listenKeyboard();
+                    self.disableScroll();
 
                     if($(this).hasClass("unchecked") && !$(this).hasClass("InputFlag")) {
                         item.css({
@@ -52,6 +53,8 @@ if(typeof Object.create !== 'function'){
                     }
 
                     else{
+                        self.enableScroll();
+
                         item.css("display", "none");
                         $(this).addClass("unchecked").removeClass("InputFlag");
                         arrow.attr("src","images/selectArrow.png");
@@ -198,6 +201,9 @@ if(typeof Object.create !== 'function'){
                                 "background-color":"#FFFFFF"
                             });
                         }
+
+
+
                     })();
                         break;
                     //клавиша Up
@@ -248,8 +254,44 @@ if(typeof Object.create !== 'function'){
                 "border-radius":"3px"
             });
             arrow.attr("src","images/selectArrow.png");
+        },
+
+        preventDefault: function(e) {
+        e = e || window.event;
+        if (e.preventDefault)
+            e.preventDefault();
+        e.returnValue = false;
+    },
+
+        disableScroll: function() {
+            var self = this;
+
+        function preventDefaultForScrollKeys(e) {
+            var keys = {38: 1, 40: 1};
+            if (keys[e.keyCode]) {
+                self.preventDefault(e);
+                return false;
+            }
         }
 
+        if (window.addEventListener) // older FF
+            window.addEventListener('DOMMouseScroll', self.preventDefault, false);
+        //window.onwheel = preventDefault; // modern standard
+        //window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        window.ontouchmove  = self.preventDefault; // mobile
+        document.onkeydown  = preventDefaultForScrollKeys;
+    },
+
+        enableScroll: function () {
+            var self = this;
+
+        if (window.removeEventListener)
+            window.removeEventListener('DOMMouseScroll', self.preventDefault, false);
+        // window.onmousewheel = document.onmousewheel = null;
+        // window.onwheel = null;
+        window.ontouchmove = null;
+        document.onkeydown = null;
+    }
 
 
     };
