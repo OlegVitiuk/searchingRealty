@@ -142,6 +142,7 @@ if(typeof Object.create !== 'function'){
             var arrow = $(".selectVisibleArrow_header");
             var item =$(".choose__city__content_select-item");
             var node = null;
+            var i = 0,j=0;
 
             $("body").keydown(function (e) {
                 switch(e.which)
@@ -162,12 +163,6 @@ if(typeof Object.create !== 'function'){
                         break;
                     //клавиша Down
                     case 40: (function() {
-                        // var items = $(".choose__city__content_select-item:not(.noClick)").hover(function () {
-                        //     $(this).nextSibling().css({
-                        //         "background-color":"red"
-                        //                 });
-                        // });
-
                         var items = $(".choose__city__content_select-item:not(.noClick)");
                         items.hover(function () {
                             resetBackgroundColor();
@@ -176,16 +171,16 @@ if(typeof Object.create !== 'function'){
                                 "color":"#152935"
                             });
                         });
-
+                        console.log(node==null);
                         resetBackgroundColor();
-                        if(node == null) {
+                        if(node==null) {
                             node = items.first().css({
                                 "background-color": "#30AE63"
                             });
                             return;
                         }
                         node = node.next();
-                            if(node!= null){
+                            if(node != null && i++<items.length-1){
                                 node.css({
                                     "background-color":"#30AE63"
                                 });
@@ -193,6 +188,10 @@ if(typeof Object.create !== 'function'){
                                 //     .find(".selectVisibleText_header").css({
                                 //     "color":"#FFFFFF"
                                 // });
+                            }
+                            else {
+                                node = null;
+                                i=0;
                             }
                         function resetBackgroundColor(){
                             items.css({
@@ -206,16 +205,20 @@ if(typeof Object.create !== 'function'){
                         var items = $(".choose__city__content_select-item:not(.noClick)");
                         resetBackgroundColor();
                         if(node == null) {
-                            node = items.first().css({
+                            node = items.last().css({
                                 "background-color": "#30AE63"
                             });
                             return;
                         }
                         node = node.prev();
-                        if(node!= null){
+                        if(node!= null && j++<items.length-1){
                             node.css({
                                 "background-color":"#30AE63"
                             });
+                        }
+                        else {
+                            node = null;
+                            j=0;
                         }
                         function resetBackgroundColor(){
                             items.css({
