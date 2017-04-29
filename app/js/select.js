@@ -64,8 +64,14 @@ if(typeof Object.create !== 'function'){
                     }
                 });
                 item.hover(function () {
-                            item.css("border",0);
+
+                            item.css({
+                                "border":"0",
+                                "background-color": "#30AE6",
+                                "color":"#152935"
+                            });
                             self.$elem.css("border","2px solid #dfe3e6");
+
                     })
                     .on("click",function () {
                         if($(this).hasClass("noClick")){
@@ -135,6 +141,8 @@ if(typeof Object.create !== 'function'){
             var self = this;
             var arrow = $(".selectVisibleArrow_header");
             var item =$(".choose__city__content_select-item");
+            var node = null;
+
             $("body").keydown(function (e) {
                 switch(e.which)
                 {
@@ -154,12 +162,69 @@ if(typeof Object.create !== 'function'){
                         break;
                     //клавиша Down
                     case 40: (function() {
-                        // console.log("down!!");
+                        // var items = $(".choose__city__content_select-item:not(.noClick)").hover(function () {
+                        //     $(this).nextSibling().css({
+                        //         "background-color":"red"
+                        //                 });
+                        // });
+
+                        var items = $(".choose__city__content_select-item:not(.noClick)");
+                        items.hover(function () {
+                            resetBackgroundColor();
+                            $(this).css({
+                                "background-color":"#30AE63",
+                                "color":"#152935"
+                            });
+                        });
+
+                        resetBackgroundColor();
+                        if(node == null) {
+                            node = items.first().css({
+                                "background-color": "#30AE63"
+                            });
+                            return;
+                        }
+                        node = node.next();
+                            if(node!= null){
+                                node.css({
+                                    "background-color":"#30AE63"
+                                });
+
+                                //     .find(".selectVisibleText_header").css({
+                                //     "color":"#FFFFFF"
+                                // });
+                            }
+                        function resetBackgroundColor(){
+                            items.css({
+                                "background-color":"#FFFFFF"
+                            });
+                        }
                     })();
                         break;
                     //клавиша Up
                     case 38: (function() {
-                        // console.log("up!!");
+                        var items = $(".choose__city__content_select-item:not(.noClick)");
+                        resetBackgroundColor();
+                        if(node == null) {
+                            node = items.first().css({
+                                "background-color": "#30AE63"
+                            });
+                            return;
+                        }
+                        node = node.prev();
+                        if(node!= null){
+                            node.css({
+                                "background-color":"#30AE63"
+                            });
+                        }
+                        function resetBackgroundColor(){
+                            items.css({
+                                "background-color":"#FFFFFF"
+                            });
+                        }
+
+
+
                     })();
                         break;
                 }
