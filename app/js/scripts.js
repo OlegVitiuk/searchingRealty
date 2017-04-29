@@ -110,5 +110,12 @@ $(document).ready(function(){
 
 
 	$(".select__header").selectPlugin({
+
     });
+
+	$(".select__search").selectPlugin({
+
+	});
+
+
 });

@@ -13,19 +13,95 @@ if(typeof Object.create !== 'function'){
                 var self = this;
                 self.elem = elem;
                 self.$elem = $(elem);
+;
 
-                self.search = (typeof options === 'string')
-                    ? options
-                    : options.search;
+                self.getOptionsValues();
                 self.options = $.extend({},$.fn.selectPlugin.options, options);
 
-                self.setDesign(elem);
                 self.run();
 
                 String.prototype.startsWith = function(prefix) {
                     return this.indexOf(prefix) === 0;
                 }
             },
+
+        getOptionsValues: function(){
+            var self = this;
+            var arr = new Array();
+
+            self.$elem.each(function () {
+                arr.push($(this).text().trim());
+            });
+            console.log(arr);
+        },
+
+        makeDesign: function(){
+            var self = this;
+            var Elements = {
+                ul: "<ul></ul>",
+                div: "<div></div>",
+                li: "<li></li>",
+                form: "<form></form>"
+            };
+
+            self.$elem.hide();
+
+            var mainUl = $(Elements.ul).insertAfter(self.$elem);
+            //console.log(mainUl);
+            mainUl.addClass("choose__city__content_select");
+
+
+
+
+
+
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //дизайн для селекта
         setDesign: function () {
@@ -111,6 +187,8 @@ if(typeof Object.create !== 'function'){
         run: function(){
                 var self = this;
 
+                self.makeDesign();
+                self.setDesign();
                 self.autocomplete();
             },
 
