@@ -29,63 +29,51 @@ if(typeof Object.create !== 'function'){
             var self = this;
             var arr = new Array();
 
-            self.$elem.each(function () {
-                arr.push($(this).text().trim());
-            });
-            console.log(arr);
+            for(var i=0; i<self.elem.options.length;i++){
+                arr.push(self.elem.options[i].text);
+            }
+            return arr;
         },
 
-        makeDesign: function(){
+        makeElements: function(){
             var self = this;
-            var Elements = {
-                ul: "<ul></ul>",
-                div: "<div></div>",
-                li: "<li></li>",
-                form: "<form></form>"
-            };
+
 
             self.$elem.hide();
 
-            var mainUl = $(Elements.ul).insertAfter(self.$elem);
-            //console.log(mainUl);
-            mainUl.addClass("choose__city__content_select");
+            //make main block element
+            var mainUl =$("<ul></ul>").insertAfter(self.$elem).addClass("choose__city__content_select");
 
+            //creating content for my main block element
+            var mainLi=$('<li>').appendTo(mainUl);
 
+            var headerOfSelect =$('<div>').appendTo(mainLi).addClass("select__header unchecked");
+            var innerUl= $('<ul>').appendTo(mainLi);
 
+            $("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header");
+            $("<img>",{src: "images/selectArrow.png"}).appendTo(headerOfSelect).addClass("selectVisibleArrow_header");
+            $("<span>x</span>").appendTo(headerOfSelect).addClass("select__clear");
 
+            //make listItems for innerUl
+            var liItem=null;
 
+            for(var i =0;i<self.getOptionsValues().length+1;i++){
 
+                liItem=$("<li>").appendTo(innerUl).addClass("choose__city__content_select-item");
+
+                //search field
+                if(i==0){
+                    liItem.addClass("noClick");
+                    var divInLiItem=$("<div>").appendTo(liItem).addClass("selectItem_header");
+                    $('<input>',{type: "text",placeholder: "Just type.."}).appendTo(divInLiItem);
+                    continue;
+                }
+                var divInLiItem=$("<div>").appendTo(liItem).addClass("selectItem_header");
+
+                $("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
+            }
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
 
@@ -187,7 +175,7 @@ if(typeof Object.create !== 'function'){
         run: function(){
                 var self = this;
 
-                self.makeDesign();
+                self.makeElements();
                 self.setDesign();
                 self.autocomplete();
             },
