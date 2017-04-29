@@ -37,20 +37,18 @@ if(typeof Object.create !== 'function'){
 
         makeElements: function(){
             var self = this;
-
-
+            
             self.$elem.hide();
 
+            var form=$("<form>").insertAfter(self.$elem).attr("id","select");
             //make main block element
-            var mainUl =$("<ul></ul>").insertAfter(self.$elem).addClass("choose__city__content_select");
-
+            var mainUl =$("<ul></ul>").appendTo(form).addClass("choose__city__content_select");
             //creating content for my main block element
             var mainLi=$('<li>').appendTo(mainUl);
-
             var headerOfSelect =$('<div>').appendTo(mainLi).addClass("select__header unchecked");
             var innerUl= $('<ul>').appendTo(mainLi);
 
-            $("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header");
+            $("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header").text(self.options.placeholder);
             $("<img>",{src: "images/selectArrow.png"}).appendTo(headerOfSelect).addClass("selectVisibleArrow_header");
             $("<span>x</span>").appendTo(headerOfSelect).addClass("select__clear");
 
@@ -73,31 +71,15 @@ if(typeof Object.create !== 'function'){
                 $("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
             }
         },
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //дизайн для селекта
         setDesign: function () {
                 var self = this;
                 var item =$(".choose__city__content_select-item");
                 var arrow = $(".selectVisibleArrow_header");
+                var selectHeader = $(".select__header");
 
-                self.$elem.on("click",function () {
+                selectHeader.on("click",function () {
 
                     self.listenKeyboard();
                     self.disableScroll();
@@ -137,33 +119,31 @@ if(typeof Object.create !== 'function'){
                             item.css({
                                 "border":"0",
                                 "background-color": "#30AE6",
-                                //"color":"#152935"
                             });
-                            self.$elem.css("border","2px solid #dfe3e6");
+                            selectHeader.css("border","2px solid #dfe3e6");
 
                     })
                     .on("click",function () {
 
                         if($(this).hasClass("noClick")){
                             item.css("display", "block");
-                            self.$elem.addClass("InputFlag");
+                            selectHeader.addClass("InputFlag");
                         } else{
-                            console.log("dfdgs");
                             self.clear();
                             var selectedItem = $(this).text().trim();
 
                             item.css("display", "none");
-                            self.$elem.find(".selectVisibleText_header").text(selectedItem);
+                            selectHeader.find(".selectVisibleText_header").text(selectedItem);
                             self.options.value = selectedItem;
                         }
-                        self.$elem.addClass("unchecked").css({
+                        selectHeader.addClass("unchecked").css({
                             "border-top":"2px solid #dfe3e6",
                             "border-left":"2px solid #dfe3e6",
                             "border-right":"2px solid #dfe3e6",
                             "border-radius":"3px"
                         });
 
-                        if(self.$elem.hasClass("InputFlag")){
+                        if(selectHeader.hasClass("InputFlag")){
                             arrow.attr("src","images/selectArrowOutwards.png");
                         }else {
                             arrow.attr("src", "images/selectArrow.png");
@@ -217,6 +197,7 @@ if(typeof Object.create !== 'function'){
         ///ловим нажатие по esc, enter, down , up
         listenKeyboard: function () {
             var self = this;
+            var selectHeader = $(".select__header");
             var arrow = $(".selectVisibleArrow_header");
             var item =$(".choose__city__content_select-item");
             var items = $(".choose__city__content_select-item:not(.noClick)");
@@ -245,7 +226,7 @@ if(typeof Object.create !== 'function'){
                             item.hover(function () {
                                 item.data("selectedItem",$(this).text().trim());
                             });
-                            self.$elem.find(".selectVisibleText_header").text(item.data("selectedItem"));
+                            selectHeader.find(".selectVisibleText_header").text(item.data("selectedItem"));
                             self.hideMyItems();
                             self.send_form("select");
                         })();
@@ -396,9 +377,10 @@ if(typeof Object.create !== 'function'){
         clear: function () {
             var self = this;
             var select =$(".select__clear");
+            var selectHeader = $(".select__header");
 
             select.show().on("click",function (e) {
-                self.$elem.find(".selectVisibleText_header").text(self.options.placeholder);
+                selectHeader.find(".selectVisibleText_header").text(self.options.placeholder);
                 select.hide();
                 e.stopPropagation();
             });
