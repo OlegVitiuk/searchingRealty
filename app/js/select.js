@@ -71,7 +71,7 @@ if(typeof Object.create !== 'function'){
                             item.css({
                                 "border":"0",
                                 "background-color": "#30AE6",
-                                "color":"#152935"
+                                //"color":"#152935"
                             });
                             self.$elem.css("border","2px solid #dfe3e6");
 
@@ -144,10 +144,20 @@ if(typeof Object.create !== 'function'){
             var self = this;
             var arrow = $(".selectVisibleArrow_header");
             var item =$(".choose__city__content_select-item");
+            var items = $(".choose__city__content_select-item:not(.noClick)");
             var node = null;
             var i = 0,j=0;
 
             $("body").keydown(function (e) {
+
+                function resetBackgroundColor(){
+                    items.css({
+                        "background-color":"#FFFFFF",
+                    }).find(".selectVisibleText_header").css({
+                        "color":"#152935"
+                    });
+                }
+
                 switch(e.which)
                 {
                     // клавиша Esc"
@@ -166,19 +176,21 @@ if(typeof Object.create !== 'function'){
                         break;
                     //клавиша Down
                     case 40: (function() {
-                        var items = $(".choose__city__content_select-item:not(.noClick)");
                         items.hover(function () {
                             resetBackgroundColor();
                             $(this).css({
-                                "background-color":"#30AE63",
-                                "color":"#152935"
+                                "background-color":"#30AE63"
+                            }).find(".selectVisibleText_header").css({
+                                "color":"#FFFFFF"
                             });
                         });
-                        console.log(node==null);
                         resetBackgroundColor();
                         if(node==null) {
                             node = items.first().css({
                                 "background-color": "#30AE63"
+                            });
+                            node.find(".selectVisibleText_header").css({
+                                "color":"#FFFFFF"
                             });
                             return;
                         }
@@ -187,23 +199,14 @@ if(typeof Object.create !== 'function'){
                                 node.css({
                                     "background-color":"#30AE63"
                                 });
-
-                                //     .find(".selectVisibleText_header").css({
-                                //     "color":"#FFFFFF"
-                                // });
+                                node.find(".selectVisibleText_header").css({
+                                    "color":"#FFFFFF"
+                                });
                             }
                             else {
                                 node = null;
                                 i=0;
                             }
-                        function resetBackgroundColor(){
-                            items.css({
-                                "background-color":"#FFFFFF"
-                            });
-                        }
-
-
-
                     })();
                         break;
                     //клавиша Up
@@ -214,6 +217,9 @@ if(typeof Object.create !== 'function'){
                             node = items.last().css({
                                 "background-color": "#30AE63"
                             });
+                            node.find(".selectVisibleText_header").css({
+                                "color":"#FFFFFF"
+                            });
                             return;
                         }
                         node = node.prev();
@@ -221,19 +227,14 @@ if(typeof Object.create !== 'function'){
                             node.css({
                                 "background-color":"#30AE63"
                             });
+                            node.find(".selectVisibleText_header").css({
+                                "color":"#FFFFFF"
+                            });
                         }
                         else {
                             node = null;
                             j=0;
                         }
-                        function resetBackgroundColor(){
-                            items.css({
-                                "background-color":"#FFFFFF"
-                            });
-                        }
-
-
-
                     })();
                         break;
                 }
@@ -292,7 +293,6 @@ if(typeof Object.create !== 'function'){
         window.ontouchmove = null;
         document.onkeydown = null;
     }
-
 
     };
 
