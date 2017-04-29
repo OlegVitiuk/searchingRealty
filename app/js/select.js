@@ -8,6 +8,7 @@ if(typeof Object.create !== 'function'){
 
 (function ($) {
     var Select = {
+        //начальная инициализация обьекта
         init: function(options, elem){
                 var self = this;
                 self.elem = elem;
@@ -26,6 +27,7 @@ if(typeof Object.create !== 'function'){
                 }
             },
 
+        //дизайн для селекта
         setDesign: function () {
                 var self = this;
                 var item =$(".choose__city__content_select-item");
@@ -77,10 +79,13 @@ if(typeof Object.create !== 'function'){
 
                     })
                     .on("click",function () {
+
                         if($(this).hasClass("noClick")){
                             item.css("display", "block");
                             self.$elem.addClass("InputFlag");
                         } else{
+                            console.log("dfdgs");
+                            self.clear();
                             var selectedItem = $(this).text().trim();
 
                             item.css("display", "none");
@@ -102,12 +107,14 @@ if(typeof Object.create !== 'function'){
                     });
             },
 
+        //запустить
         run: function(){
                 var self = this;
 
                 self.autocomplete();
             },
 
+        //реализация автодополнения
         autocomplete: function(){
                 var self = this;
                 var item =$(".choose__city__content_select-item");
@@ -134,12 +141,14 @@ if(typeof Object.create !== 'function'){
                 }
             },
 
+        //гетер для options.value
         getValue: function () {
             var self = this;
 
             return self.options.value;
              },
 
+        ///ловим нажатие по esc, enter, down , up
         listenKeyboard: function () {
             var self = this;
             var arrow = $(".selectVisibleArrow_header");
@@ -242,6 +251,7 @@ if(typeof Object.create !== 'function'){
             });
         },
 
+        //спрятать елементы выпадающего списка
         hideMyItems: function () {
             var self = this;
 
@@ -258,6 +268,7 @@ if(typeof Object.create !== 'function'){
             arrow.attr("src","images/selectArrow.png");
         },
 
+        //запретить действие по умолчанию
         preventDefault: function(e) {
         e = e || window.event;
         if (e.preventDefault)
@@ -265,6 +276,7 @@ if(typeof Object.create !== 'function'){
         e.returnValue = false;
     },
 
+        //отключение скрола для arrow down
         disableScroll: function() {
             var self = this;
 
@@ -284,6 +296,7 @@ if(typeof Object.create !== 'function'){
         document.onkeydown  = preventDefaultForScrollKeys;
     },
 
+        //включение скрола для arrow down
         enableScroll: function () {
             var self = this;
 
@@ -311,7 +324,19 @@ if(typeof Object.create !== 'function'){
             }
         });
 
-    }
+    },
+
+        //очистить селект
+        clear: function () {
+            var self = this;
+            var select =$(".select__clear");
+
+            select.show().on("click",function (e) {
+                self.$elem.find(".selectVisibleText_header").text(self.options.placeholder);
+                select.hide();
+                e.stopPropagation();
+            });
+        }
     };
 
     $.fn.selectPlugin=function (options) {

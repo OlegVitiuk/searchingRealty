@@ -1,0 +1,10 @@
+.select__clear{
+  position: absolute;
+  right:3px;
+  color: #152935;
+  display: none;
+}
+.select__clear:hover{
+  color: darkred;
+  transform: scale(1.2);
+}

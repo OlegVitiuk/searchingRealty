@@ -1297,6 +1297,16 @@ table {
   flex-wrap: wrap;
   align-items: flex-end; }
 
+.select__clear {
+  position: absolute;
+  right: 3px;
+  color: #152935;
+  display: none; }
+
+.select__clear:hover {
+  color: darkred;
+  transform: scale(1.2); }
+
 .red {
   background-color: #E71D32; }
 
