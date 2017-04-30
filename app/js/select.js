@@ -25,6 +25,32 @@ if(typeof Object.create !== 'function'){
                 }
             },
 
+        hasFocus: function () {
+            var self =this;
+
+            return self.$elem.hasClass("select--focus");
+        },
+
+        //choose necessary select to show
+        chooseNecessarySelect: function () {
+            var self =this;
+
+            var form = $("selectForm");
+            self.$elem.next().addClass("select--focus")
+            //console.log(self.$elem.next().addClass("focus"));
+            //console.log(form.get(0));
+
+
+            // if(self.$elem.next().get(0)==form.get(0)){
+            //     console.log(fff);
+            // }
+            //console.log(self.$elem);
+            // self.$elem.on("click", function () {
+            //     console.log(self.$elem);
+            //     //self.$elem.addClass("select--focus")
+            // });
+        },
+
         getOptionsValues: function(){
             var self = this;
             var arr = new Array();
@@ -37,10 +63,10 @@ if(typeof Object.create !== 'function'){
 
         makeElements: function(){
             var self = this;
-            
+
             self.$elem.hide();
 
-            var form=$("<form>").insertAfter(self.$elem).attr("id","select");
+            var form=$("<form>").insertAfter(self.$elem).addClass("selectForm");
             //make main block element
             var mainUl =$("<ul></ul>").appendTo(form).addClass("choose__city__content_select");
             //creating content for my main block element
@@ -68,6 +94,7 @@ if(typeof Object.create !== 'function'){
                 }
                 var divInLiItem=$("<div>").appendTo(liItem).addClass("selectItem_header");
 
+                $('<div>').appendTo(divInLiItem).addClass("colorOfItem").hide();
                 $("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
             }
         },
@@ -80,6 +107,8 @@ if(typeof Object.create !== 'function'){
                 var selectHeader = $(".select__header");
 
                 selectHeader.on("click",function () {
+
+                    self.chooseNecessarySelect();
 
                     self.listenKeyboard();
                     self.disableScroll();
@@ -396,8 +425,8 @@ if(typeof Object.create !== 'function'){
     };
 
     $.fn.selectPlugin.options={
-        value: "Киев",
-        placeholder: "Киев",
+        value: "",
+        placeholder: "Выберете елемент списка",
         autocomplete: true
     };
 })(jQuery);
