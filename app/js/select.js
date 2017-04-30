@@ -238,6 +238,7 @@ if(typeof Object.create !== 'function'){
                         (function () {
                             if(enterText!=undefined) {
                                 selectHeader.find(".selectVisibleText_header").text(enterText);
+                                self.options.value = enterText;
                                 enterText=undefined;
                             }
 
@@ -246,6 +247,20 @@ if(typeof Object.create !== 'function'){
                             });
                             selectHeader.find(".selectVisibleText_header").text(item.data("selectedItem"));
                             self.hideMyItems();
+
+                            self.enableScroll();
+                            self.clear();
+
+                            item.css("display", "none");
+                            $(selectHeader).addClass("unchecked").removeClass("InputFlag");
+                            arrow.attr("src","images/selectArrow.png");
+                            $(selectHeader).css({
+                                "border-top":"2px solid #dfe3e6",
+                                "border-left":"2px solid #dfe3e6",
+                                "border-right":"2px solid #dfe3e6",
+                                "border-radius":"3px"
+                            });
+
                             self.send_form("select");
                         })();
                         break;
@@ -297,6 +312,7 @@ if(typeof Object.create !== 'function'){
                             node.find(".selectVisibleText_header").css({
                                 "color":"#FFFFFF"
                             });
+                            enterText=node.find(".selectVisibleText_header").text();
                             return;
                         }
                         node = node.prev();
@@ -307,6 +323,7 @@ if(typeof Object.create !== 'function'){
                             node.find(".selectVisibleText_header").css({
                                 "color":"#FFFFFF"
                             });
+                            enterText=node.find(".selectVisibleText_header").text();
                         }
                         else {
                             node = null;
