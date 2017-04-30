@@ -31,26 +31,6 @@ if(typeof Object.create !== 'function'){
             return self.$elem.hasClass("select--focus");
         },
 
-        //choose necessary select to show
-        chooseNecessarySelect: function () {
-            var self =this;
-
-            var form = $("selectForm");
-            self.$elem.next().addClass("select--focus")
-            //console.log(self.$elem.next().addClass("focus"));
-            //console.log(form.get(0));
-
-
-            // if(self.$elem.next().get(0)==form.get(0)){
-            //     console.log(fff);
-            // }
-            //console.log(self.$elem);
-            // self.$elem.on("click", function () {
-            //     console.log(self.$elem);
-            //     //self.$elem.addClass("select--focus")
-            // });
-        },
-
         getOptionsValues: function(){
             var self = this;
             var arr = new Array();
@@ -104,11 +84,12 @@ if(typeof Object.create !== 'function'){
                 var self = this;
                 var item =$(".choose__city__content_select-item");
                 var arrow = $(".selectVisibleArrow_header");
-                var selectHeader = $(".select__header");
+                var selectHeader = self.$elem.next().find(".select__header");
 
                 selectHeader.on("click",function () {
 
-                    self.chooseNecessarySelect();
+                    console.log(selectHeader);
+                    selectHeader.addClass("select--focus");
 
                     self.listenKeyboard();
                     self.disableScroll();
