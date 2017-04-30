@@ -83,8 +83,6 @@ if(typeof Object.create !== 'function'){
                 var selectHeader = self.$elem.next().find(".select__header");
 
                 selectHeader.on("click",function () {
-
-                    console.log(selectHeader);
                     selectHeader.addClass("select--focus");
 
                     self.listenKeyboard();
@@ -217,6 +215,7 @@ if(typeof Object.create !== 'function'){
 
             var node = null;
             var i = 0,j=0;
+            var enterText;
 
             $("body").keydown(function (e) {
 
@@ -237,6 +236,11 @@ if(typeof Object.create !== 'function'){
                     //клавиша Enter
                     case 13:
                         (function () {
+                            if(enterText!=undefined) {
+                                selectHeader.find(".selectVisibleText_header").text(enterText);
+                                enterText=undefined;
+                            }
+
                             item.hover(function () {
                                 item.data("selectedItem",$(this).text().trim());
                             });
@@ -246,8 +250,8 @@ if(typeof Object.create !== 'function'){
                         })();
                         break;
                     //клавиша Down
-                    case 40: (function() {
-                        items.hover(function () {
+                    case 40:
+                            items.hover(function () {
                             resetBackgroundColor();
                             $(this).css({
                                 "background-color":"#30AE63"
@@ -263,6 +267,8 @@ if(typeof Object.create !== 'function'){
                             node.find(".selectVisibleText_header").css({
                                 "color":"#FFFFFF"
                             });
+
+                            enterText=node.find(".selectVisibleText_header").text();
                             return;
                         }
                         node = node.next();
@@ -273,12 +279,13 @@ if(typeof Object.create !== 'function'){
                                 node.find(".selectVisibleText_header").css({
                                     "color":"#FFFFFF"
                                 });
+
+                                enterText=node.find(".selectVisibleText_header").text();
                             }
                             else {
                                 node = null;
                                 i=0;
                             }
-                    })();
                         break;
                     //клавиша Up
                     case 38: (function() {
