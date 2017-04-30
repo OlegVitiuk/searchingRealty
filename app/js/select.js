@@ -231,6 +231,7 @@ if(typeof Object.create !== 'function'){
             var node = null;
             var i = 0,j=0;
             var enterText;
+            var colorOfCircle;
 
             $("body").keydown(function (e) {
 
@@ -260,7 +261,9 @@ if(typeof Object.create !== 'function'){
                             item.hover(function () {
                                 item.data("selectedItem",$(this).text().trim());
                             });
-                            selectHeader.find(".selectVisibleText_header").text(item.data("selectedItem"));
+                            selectHeader.find(".selectVisibleText_header").text(item.data("selectedItem")).next()
+                                        .removeClass("red green blue").addClass(colorOfCircle);
+
                             self.hideMyItems();
 
                             self.enableScroll();
@@ -299,6 +302,7 @@ if(typeof Object.create !== 'function'){
                             });
 
                             enterText=node.find(".selectVisibleText_header").text();
+                            colorOfCircle=node.find(".colorOfItem").attr("class").split(' ').splice(1,1).toString();
                             return;
                         }
                         node = node.next();
@@ -311,6 +315,7 @@ if(typeof Object.create !== 'function'){
                                 });
 
                                 enterText=node.find(".selectVisibleText_header").text();
+                                colorOfCircle=node.find(".colorOfItem").attr("class").split(' ').splice(1,1).toString();
                             }
                             else {
                                 node = null;
@@ -328,6 +333,7 @@ if(typeof Object.create !== 'function'){
                                 "color":"#FFFFFF"
                             });
                             enterText=node.find(".selectVisibleText_header").text();
+                            colorOfCircle=node.find(".colorOfItem").attr("class").split(' ').splice(1,1).toString();
                             return;
                         }
                         node = node.prev();
@@ -339,6 +345,7 @@ if(typeof Object.create !== 'function'){
                                 "color":"#FFFFFF"
                             });
                             enterText=node.find(".selectVisibleText_header").text();
+                            colorOfCircle=node.find(".colorOfItem").attr("class").split(' ').splice(1,1).toString();
                         }
                         else {
                             node = null;
