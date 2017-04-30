@@ -1307,6 +1307,14 @@ table {
   align-items: center;
   position: relative; }
 
+.colorOfItem {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  left: 16px;
+  top: 40%; }
+
 .red {
   background-color: #E71D32; }
 

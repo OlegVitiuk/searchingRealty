@@ -69,7 +69,8 @@ $(document).ready(function(){
 		placeholder: "Киев"
 	});
 	$(".select__content").selectPlugin({
-		placeholder: "Политехнический институт"
+		placeholder: "Политехнический институт",
+		colors: ["red","red","green","blue"]
 	});
 
 

@@ -13,9 +13,7 @@ if(typeof Object.create !== 'function'){
                 var self = this;
                 self.elem = elem;
                 self.$elem = $(elem);
-;
 
-                self.getOptionsValues();
                 self.options = $.extend({},$.fn.selectPlugin.options, options);
 
                 self.run();
@@ -37,6 +35,7 @@ if(typeof Object.create !== 'function'){
 
         makeElements: function(){
             var self = this;
+            var isColor = self.options.colors.length == self.getOptionsValues().length;
 
             self.$elem.hide();
 
@@ -68,8 +67,14 @@ if(typeof Object.create !== 'function'){
                 }
                 var divInLiItem=$("<div>").appendTo(liItem).addClass("selectItem_header");
 
-                $('<div>').appendTo(divInLiItem).addClass("colorOfItem").hide();
-                $("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
+                var textHeadeer=$("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
+
+                if(isColor && i!=0) {
+                    $('<div>').appendTo(divInLiItem).addClass("colorOfItem").addClass("colorOfItem").addClass(self.options.colors[i-1]);
+                    textHeadeer.css({
+                        "left": "35px"
+                    });
+                }
             }
         },
 
@@ -159,6 +164,7 @@ if(typeof Object.create !== 'function'){
         run: function(){
                 var self = this;
 
+                self.getOptionsValues();
                 self.makeElements();
                 self.setDesign();
                 self.autocomplete();
@@ -440,6 +446,7 @@ if(typeof Object.create !== 'function'){
     $.fn.selectPlugin.options={
         value: "",
         placeholder: "Выберете елемент списка",
-        autocomplete: true
+        autocomplete: true,
+        colors:{}
     };
 })(jQuery);
