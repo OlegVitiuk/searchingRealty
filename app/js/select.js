@@ -25,12 +25,6 @@ if(typeof Object.create !== 'function'){
                 }
             },
 
-        hasFocus: function () {
-            var self =this;
-
-            return self.$elem.hasClass("select--focus");
-        },
-
         getOptionsValues: function(){
             var self = this;
             var arr = new Array();
@@ -82,8 +76,10 @@ if(typeof Object.create !== 'function'){
         //дизайн для селекта
         setDesign: function () {
                 var self = this;
-                var item =$(".choose__city__content_select-item");
-                var arrow = $(".selectVisibleArrow_header");
+                //var item =$(".choose__city__content_select-item");
+                //var arrow = $(".selectVisibleArrow_header");
+                var item =self.$elem.next().find(".choose__city__content_select-item");
+                var arrow = self.$elem.next().find(".selectVisibleArrow_header-item");
                 var selectHeader = self.$elem.next().find(".select__header");
 
                 selectHeader.on("click",function () {
