@@ -379,7 +379,7 @@ table {
           align-items: center;
   position: relative; }
 
-.colorOfMetro {
+.colorOfItem {
   position: absolute;
   height: 8px;
   width: 8px;
@@ -1635,21 +1635,6 @@ table {
           border-radius: 0;
   color: #FFFFFF; }
 
-.select__header {
-  border: 2px solid #dfe3e6;
-  width: 100%;
-  height: 40px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  background-color: #FFFFFF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
 .header_wrapper {
   width: 78.830%;
   -webkit-flex-wrap: wrap;
@@ -1687,54 +1672,6 @@ table {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end; }
-
-.selectVisibleText_header {
-  position: absolute;
-  font-family: "Open Sans";
-  font-size: 14px;
-  left: 15px;
-  top: 12px;
-  line-height: 18px;
-  color: #152935; }
-
-.choose__city__content_select-item {
-  display: none;
-  width: 100%;
-  background-color: #FFFFFF;
-  border: 0;
-  z-index: 10;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-.choose__city__content_select-item:hover {
-  background-color: #30AE63; }
-  .choose__city__content_select-item:hover .selectVisibleText_header {
-    color: #FFFFFF; }
-
-.selectItem_header {
-  width: 100%;
-  height: 40px;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative; }
-
-.selectVisibleArrow_header {
-  position: absolute;
-  top: 48%;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
-  right: 15px; }
-
-.choose__city__content_select {
-  width: 100%;
-  height: 40px;
-  cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
 
 .modal {
   width: 800px;
@@ -2068,6 +2005,98 @@ table {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end; }
+
+.select__clear {
+  position: absolute;
+  right: 3px;
+  color: #152935;
+  display: none; }
+
+.select__clear:hover {
+  color: darkred;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2); }
+
+.choose__city__content_select {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.select__header {
+  border: 2px solid #dfe3e6;
+  width: 100%;
+  height: 40px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.selectVisibleText_header {
+  position: absolute;
+  font-family: "Open Sans";
+  font-size: 14px;
+  left: 15px;
+  top: 12px;
+  line-height: 18px;
+  color: #152935; }
+
+.selectVisibleArrow_header {
+  position: absolute;
+  top: 48%;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  right: 15px; }
+
+.choose__city__content_select-item {
+  display: none;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 0;
+  z-index: 10;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .choose__city__content_select-item input {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    border: 0; }
+
+.choose__city__content_select-item:hover {
+  background-color: #30AE63; }
+  .choose__city__content_select-item:hover .selectVisibleText_header {
+    color: #FFFFFF; }
+
+.selectItem_header {
+  width: 100%;
+  height: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+
+.colorOfItem {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: 16px;
+  top: 40%; }
+
+.selectForm {
+  width: 100%; }
 
 .red {
   background-color: #E71D32; }
