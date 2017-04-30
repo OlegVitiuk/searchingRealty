@@ -47,7 +47,13 @@ if(typeof Object.create !== 'function'){
             var headerOfSelect =$('<div>').appendTo(mainLi).addClass("select__header unchecked");
             var innerUl= $('<ul>').appendTo(mainLi);
 
-            $("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header").text(self.options.placeholder);
+            var titleText=$("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header").text(self.options.placeholder);
+            if(isColor && i!=0) {
+                $('<div>').appendTo(headerOfSelect).addClass("colorOfItem");
+                titleText.css({
+                    "left": "35px"
+                });
+            }
             $("<img>",{src: "images/selectArrow.png"}).appendTo(headerOfSelect).addClass("selectVisibleArrow_header");
             $("<span>x</span>").appendTo(headerOfSelect).addClass("select__clear");
 
@@ -70,7 +76,7 @@ if(typeof Object.create !== 'function'){
                 var textHeadeer=$("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
 
                 if(isColor && i!=0) {
-                    $('<div>').appendTo(divInLiItem).addClass("colorOfItem").addClass("colorOfItem").addClass(self.options.colors[i-1]);
+                    $('<div>').appendTo(divInLiItem).addClass("colorOfItem").addClass(self.options.colors[i-1]);
                     textHeadeer.css({
                         "left": "35px"
                     });

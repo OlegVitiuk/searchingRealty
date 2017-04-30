@@ -2095,6 +2095,9 @@ table {
   left: 16px;
   top: 40%; }
 
+.selectForm {
+  width: 100%; }
+
 .red {
   background-color: #E71D32; }
 
