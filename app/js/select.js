@@ -79,7 +79,7 @@ if(typeof Object.create !== 'function'){
                 //var item =$(".choose__city__content_select-item");
                 //var arrow = $(".selectVisibleArrow_header");
                 var item =self.$elem.next().find(".choose__city__content_select-item");
-                var arrow = self.$elem.next().find(".selectVisibleArrow_header-item");
+                var arrow = self.$elem.next().find(".selectVisibleArrow_header");
                 var selectHeader = self.$elem.next().find(".select__header");
 
                 selectHeader.on("click",function () {
@@ -169,7 +169,8 @@ if(typeof Object.create !== 'function'){
         //реализация автодополнения
         autocomplete: function(){
                 var self = this;
-                var item =$(".choose__city__content_select-item");
+                var item =self.$elem.next().find(".choose__city__content_select-item");
+                //var item =$(".choose__city__content_select-item");
 
                 function strStartsWith(str, prefix) {
                     return str.indexOf(prefix) === 0;
@@ -203,10 +204,17 @@ if(typeof Object.create !== 'function'){
         ///ловим нажатие по esc, enter, down , up
         listenKeyboard: function () {
             var self = this;
-            var selectHeader = $(".select__header");
-            var arrow = $(".selectVisibleArrow_header");
-            var item =$(".choose__city__content_select-item");
-            var items = $(".choose__city__content_select-item:not(.noClick)");
+            //var selectHeader = $(".select__header");
+            //var arrow = $(".selectVisibleArrow_header");
+            //var item =$(".choose__city__content_select-item");
+            //var items = $(".choose__city__content_select-item:not(.noClick)");
+
+            var item =self.$elem.next().find(".choose__city__content_select-item");
+            var arrow = self.$elem.next().find(".selectVisibleArrow_header");
+            var selectHeader = self.$elem.next().find(".select__header");
+            var items = self.$elem.next().find(".choose__city__content_select-item:not(.noClick)");
+
+
             var node = null;
             var i = 0,j=0;
 
@@ -274,7 +282,6 @@ if(typeof Object.create !== 'function'){
                         break;
                     //клавиша Up
                     case 38: (function() {
-                        var items = $(".choose__city__content_select-item:not(.noClick)");
                         resetBackgroundColor();
                         if(node == null) {
                             node = items.last().css({
@@ -308,8 +315,11 @@ if(typeof Object.create !== 'function'){
         hideMyItems: function () {
             var self = this;
 
-            var arrow = $(".selectVisibleArrow_header");
-            var item =$(".choose__city__content_select-item");
+            // var arrow = $(".selectVisibleArrow_header");
+            // var item =$(".choose__city__content_select-item");
+
+            var item =self.$elem.next().find(".choose__city__content_select-item");
+            var arrow = self.$elem.next().find(".selectVisibleArrow_header");
 
             item.css("display", "none");
             self.$elem.addClass("unchecked").removeClass("InputFlag").css({
@@ -382,8 +392,10 @@ if(typeof Object.create !== 'function'){
         //очистить селект
         clear: function () {
             var self = this;
-            var select =$(".select__clear");
-            var selectHeader = $(".select__header");
+            // var select =$(".select__clear");
+            // var selectHeader = $(".select__header");
+            var selectHeader = self.$elem.next().find(".select__header");
+            var select = self.$elem.next().find(".select__clear");
 
             select.show().on("click",function (e) {
                 selectHeader.find(".selectVisibleText_header").text(self.options.placeholder);
