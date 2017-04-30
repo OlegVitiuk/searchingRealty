@@ -49,7 +49,7 @@ if(typeof Object.create !== 'function'){
 
             var titleText=$("<p>").appendTo(headerOfSelect).addClass("selectVisibleText_header").text(self.options.placeholder);
             if(isColor && i!=0) {
-                $('<div>').appendTo(headerOfSelect).addClass("colorOfItem");
+                $('<div>').appendTo(headerOfSelect).addClass("colorOfItem").addClass(self.options.colors[0]);
                 titleText.css({
                     "left": "35px"
                 });
@@ -73,7 +73,8 @@ if(typeof Object.create !== 'function'){
                 }
                 var divInLiItem=$("<div>").appendTo(liItem).addClass("selectItem_header");
 
-                var textHeadeer=$("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").text(self.getOptionsValues()[i-1]);
+                var textHeadeer=$("<p>").appendTo(divInLiItem).addClass("selectVisibleText_header").
+                    text(self.getOptionsValues()[i-1]);
 
                 if(isColor && i!=0) {
                     $('<div>').appendTo(divInLiItem).addClass("colorOfItem").addClass(self.options.colors[i-1]);
@@ -147,8 +148,10 @@ if(typeof Object.create !== 'function'){
                             self.clear();
                             var selectedItem = $(this).text().trim();
 
+                            var indexOfClickItem= $(this).index()-1;
+
                             item.css("display", "none");
-                            selectHeader.find(".selectVisibleText_header").text(selectedItem);
+                            selectHeader.find(".selectVisibleText_header").text(selectedItem).next().removeClass("red blue green").addClass(self.options.colors[indexOfClickItem]);
                             self.options.value = selectedItem;
                         }
                         selectHeader.addClass("unchecked").css({
@@ -434,7 +437,7 @@ if(typeof Object.create !== 'function'){
             var select = self.$elem.next().find(".select__clear");
 
             select.show().on("click",function (e) {
-                selectHeader.find(".selectVisibleText_header").text(self.options.placeholder);
+                selectHeader.find(".selectVisibleText_header").text(self.options.placeholder).next().removeClass("red blue green").addClass(self.options.colors[0]);
                 select.hide();
                 e.stopPropagation();
             });
