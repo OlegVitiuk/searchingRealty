@@ -22,6 +22,8 @@ $.fn.slider = function(){
     
       $('#slidesContainer').css('overflow', 'visible');
       $('#slidesShow').css('overflow', 'hidden');
+      $('#slidesShow').css('width', "100%")
+      $('#slidesContainer').css('overflow', 'hidden');
       $('#slidesContainer').css('position','relative');
       $('#slidesContainer').css('display','flex');
       $('#slidesContainer').css('width','elemWidth*numberofElem');
