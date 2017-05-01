@@ -20,27 +20,30 @@ $.fn.slider = function(){
     
       $('#slidesContainer').css('overflow', 'visible');
       $('#slidesShow').css('overflow', 'hidden');
-      $('#slidesShow').css('display', 'flex');
       $('#slidesContainer').css('position','relative');
       $('#slidesContainer').css('width','elemWidth*numberofElem');
       $('#slidesShow').css('width', '100%');
-      $('#slidesContainer').css('left','-elemWidth');
+      $('#slidesContainer').css('left','-elemwWidth');
     //  $('#slidesContainer>div:last-child').prependTo('#slidesContainer');
+  $('<span class ="control_next">Next</span>').appendTo('#slidesShow');  
+  $('<span class = "control_prev">Prev</span>').prependTo('#slidesShow');
+  $('.control_next').css('display','none');
+  $('.control_prev').css('display','none');
   var control = false;
    $('#slidesShow').mouseover(function(){
     if (!control){
-      $('<span class = "control_prev">Prev</span>').prependTo('#slidesShow');
-      $('<span class ="control_next">Next</span>').appendTo('#slidesShow');     
+      $('.control_next').css('display','');
+      $('.control_prev').css('display','');
       control = true;
-     }
+   }
    });
     $('#slidesShow').mouseout(function(){
       if (control){
-        $('.control_next').remove();
-        $('.control_prev').remove();
+        $('.control_next').css('display','none');
+        $('.control_prev').css('display','none');
         control = false;
       }
-    })
+    });
 
  $('.control_next').click(function(){
               $('#slidesContainer>div:first-child').clone().appendTo('#slidesContainer');
@@ -50,18 +53,17 @@ $.fn.slider = function(){
                  $('#slidesContainer>div:first-child').remove();
                  options.index != 0
                ? options.index-1 : options.index = numberofElem-1;
-                $('#slidesContainer').css('left','-elemWidth')
+                $('#slidesContainer').css('left','0')
                 });
              }); 
     $('.control_prev').click(function(){
-                $('#slidesContainer>div:last-child').clone(). prependTo('#slidesContainer');
                 $('#slidesContainer').animate({
                 left: +elemWidth   
                }, 500, function(){
-                 $('#slidesContainer>div:last-child').remove();
+                 $('#slidesContainer>div:last-child').prependTo('#slidesContainer');
                  options.index != numberofElem-1
                ? options.index+1 : options.index = 0;
-                  $('#slidesContainer').css('left','-elemWidth')
+                  $('#slidesContainer').css('left','0')
 
                });
              });
@@ -76,22 +78,21 @@ $( window ).on( "swipe", function( event ) {
       if ((swipestart-swipeend)<0){
         $('#slidesContainer>div:first-child').clone().appendTo('#slidesContainer');
         $('#slidesContainer').animate({
-                left: -elemWidth*2
+                left: -elemWidth
                }, 1000, function(){
                  options.index != 0
                ? options.index-1 : options.index = numberofElem-1;
                 $('#slidesContainer>div:first-child').remove();
-                $('#slidesContainer').css('left','-elemWidth')
+                $('#slidesContainer').css('left','0')
                    })
       }else{
-        $('#slidesContainer>div:last-child').clone().prependTo('#slidesContainer');
         $('#slidesContainer').animate({
                 left: +elemWidth
                }, 1000, function(){
                  options.index != numberofElem-1
                ? options.index+1 : options.index = 0;
-                $('#slidesContainer>div:last-child').remove();
-                $('#slidesContainer').css('left','-elemWidth')
+                $('#slidesContainer>div:last-child').prependTo('#slidesContainer');
+                $('#slidesContainer').css('left','0')
                });
       };
     };
@@ -104,7 +105,6 @@ $( window ).on( "swipe", function( event ) {
       options.autoPlay = true;
      })
 
-    
       setInterval(function () {
         if(options.autoPlay){
         $('#slidesContainer>div:first-child').clone().appendTo('#slidesContainer');
