@@ -6,7 +6,6 @@
     <title>searchingRealty</title>
     <link rel="stylesheet" href="app/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="app/js/jquery-1.11.1.min.js"></script>
 </head>
 <body>
     <div class="page">
@@ -19,16 +18,23 @@
                             <a class="nav_link underline-white" href="./app/index.html">Аренда</a>
                             <a class="h_hidden nav_link underline-white" href="#">Продажа</a>
                             <a class="h_hidden nav_link underline-white" href="#">Посуточно</a>
-                            <a class="h_hidden nav_link underline-white" href="#">
+                            <div class="h_hidden nav_link underline-white lastItem" href="#">
                                 <div class="h_hidden header_ovals" >
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
                                 </div>
-                                <div class="header_text">
-                                    <p>Еще</p>
+                                <p class="header_text">Еще</p>
+                                <div class="overflow">
+                                    <ul class="overflow__menu">
+                                        <li class="overflow__menu-item"><a href="#">Stop app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Restart app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Rename app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+                                        <li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+                                    </ul>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="h_hidden nav_register">
@@ -36,7 +42,7 @@
                                 <img class="shareAds_img" src="./images/Shape.png" alt="+">
                                 <p class="shareAds_text">Pазместить обьявление</p>
                             </a>
-                        <a class="button enter">Войти</a>
+                        <a class="enter">Войти</a>
                     </div>
                     <div class = "hamb_on h_rehidden">
                         <a src = "menu" href="#"><img src = "./app/images/menu.png"></a>
@@ -47,43 +53,14 @@
                     <div class="halfwide content__search">
                         <div class="choose__city">
                             <p class="choose__city_title">Выберите город</p>
-                            <ul class="choose__city__content_select">
-                                <li>
-                                    <div class="select__header unchecked">
-                                        <p class="selectVisibleText_header">Киев</p>
-                                        <img class="selectVisibleArrow_header" src="images/selectArrow.png" alt="arrow">
-                                    </div>
-                                    <ul>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Киев</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Харьков</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Львов</p>
-                                            </div>
-                                        </li>
-                                        <li class="choose__city__content_select-item">
-                                            <div class="selectItem_header">
-                                                <p class="selectVisibleText_header">Сумы</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-
-                            <!--<select class="choose__city_selector">-->
-                            <!--<option value="1">Киев</option>-->
-                            <!--<option value="1">Лондон</option>-->
-                            <!--<option value="2">Берлин</option>-->
-                            <!--<option value="3">Москва</option>-->
-                            <!--</select>-->
+                            <select class="select__search">
+                                <option>Киев</option>
+                                <option>Лондон</option>
+                                <option>Берлин</option>
+                                <option>Харьков</option>
+                                <option>Хабаровск</option>
+                                <option>Бородино</option>
+                            </select>
                         </div>
                         <div class="choose__rooms">
                             <p class="choose-rooms-title">Кол-во комнат</p>
@@ -105,7 +82,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="button content__search_start">
+                        <a class="button_white content__search_start">
                             Перейти к поиску
                         </a>
                     </div>
@@ -126,43 +103,51 @@
                                     <a class="nav_link-content underline-green" href="#">Офисы</a>
                                 </div>
 
-                                <ul class="fullwide realty_search_content_select">
-                                    <li>
-                                        <div class="fullwide select unchecked">
-                                            <div class="colorOfMetro red"></div>
-                                            <p class="selectVisibleText">Политехнический институт</p>
-                                            <img class="selectVisibleArrow" src="images/selectArrow.png" alt="arrow">
-                                        </div>
-                                        <ul>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro red"></div>
-                                                        <p class="selectVisibleText">Политехнический институт</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro red"></div>
-                                                        <p class="selectVisibleText">Шулявская</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro green"></div>
-                                                        <p class="selectVisibleText">Золотые ворота</p>
-                                                    </div>
-                                            </li>
-                                            <li class="realty_search_content_select-item">
-                                                    <div class="selectItem">
-                                                        <div class="colorOfMetro blue"></div>
-                                                        <p class="selectVisibleText">Лыбедская</p>
-                                                    </div>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <!--<ul class="fullwide realty_search_content_select">-->
+                                    <!--<li>-->
+                                        <!--<div class="fullwide select unchecked">-->
+                                            <!--<div class="colorOfItem red"></div>-->
+                                            <!--<p class="selectVisibleText">Политехнический институт</p>-->
+                                            <!--<img class="selectVisibleArrow" src="images/selectArrow.png" alt="arrow">-->
+                                        <!--</div>-->
+                                        <!--<ul>-->
+                                            <!--<li class="realty_search_content_select-item">-->
+                                                    <!--<div class="selectItem">-->
+                                                        <!--<div class="colorOfItem red"></div>-->
+                                                        <!--<p class="selectVisibleText">Политехнический институт</p>-->
+                                                    <!--</div>-->
+                                            <!--</li>-->
+                                            <!--<li class="realty_search_content_select-item">-->
+                                                    <!--<div class="selectItem">-->
+                                                        <!--<div class="colorOfItem red"></div>-->
+                                                        <!--<p class="selectVisibleText">Шулявская</p>-->
+                                                    <!--</div>-->
+                                            <!--</li>-->
+                                            <!--<li class="realty_search_content_select-item">-->
+                                                    <!--<div class="selectItem">-->
+                                                        <!--<div class="colorOfItem green"></div>-->
+                                                        <!--<p class="selectVisibleText">Золотые ворота</p>-->
+                                                    <!--</div>-->
+                                            <!--</li>-->
+                                            <!--<li class="realty_search_content_select-item">-->
+                                                    <!--<div class="selectItem">-->
+                                                        <!--<div class="colorOfItem blue"></div>-->
+                                                        <!--<p class="selectVisibleText">Лыбедская</p>-->
+                                                    <!--</div>-->
+                                            <!--</li>-->
+                                        <!--</ul>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+
+                                <select class="select__content">
+                                    <option>Политехнический институт</option>
+                                    <option>Шулявская</option>
+                                    <option>Золотые ворота</option>
+                                    <option>Лыбедская</option>
+                                </select>
+
                             </div>
-                            <a class="fullwide realty_search_content_show button" href="#">Показать результаты поиска</a>
+                            <a class="fullwide realty_search_content_show button_green" href="#">Показать результаты поиска</a>
                         </div>
                         <img class="fullwide realty_search_img" src="./images/metro.svg" alt="metro">
                     </div>
@@ -385,7 +370,9 @@
                             </div>
                         </div>
                     </div>
-                <div class="fullwide content__telegram">
+                <div id = "slidesShow">
+                <div id = "slidesContainer">
+                <div class="fullwide content__telegram slide">
                     <div class="telegram__header">
                         <p class="telegram__header_title">Общайтесь в Telegram</p>
                         <p class="telegram__header_text">Не отвлекайтесь больше на формальности. Получайте моментальные
@@ -415,10 +402,10 @@
                                             <p class="black">Общайтесь с клиентами через специальный канал телекоммуникации</p>
                                         </div>
                                 </div>
-                                <a class="telegram__content__info_join button" href="#">Присоединиться в Telegram</a>
+                                <a class="telegram__content__info_join button_green" href="#">Присоединиться в Telegram</a>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="content__switchers">
                         <input id="firstSlide" type="radio" name="page" value="1">
                         <label for="firstSlide"></label>
@@ -426,6 +413,9 @@
                         <label for="secondSlide"></label>
                     </div>
                 </div>
+                </div>
+                    </div>
+                
                 <div class="content__metrovka">
                     <div class="content__metrovka_wrapper">
                         <div class="telegram__header metrovka">
@@ -557,7 +547,7 @@
                             <p class="city">Киев, 01033</p>
                         </div>
                         <p class="street">info@metrovka.ua</p>
-                        <a class="telegram__content__info_join footer_button" href="#">Оставить заявку</a>
+                        <a class="telegram__content__info_join footer_button button_green" href="#">Оставить заявку</a>
                     </div>
                 </div>
             </div>
@@ -579,31 +569,15 @@
                                 <a class="nav_link-telegram underline-green black modal_menu_margin" href="#">Район</a>
                                 <a class="nav_link-telegram underline-green black" href="#">Метро</a>
                             </div>
-                            <ul class="choose__city__content_select">
-                                <li>
-                                    <div class="select__modal unchecked">
-                                        <p class="selectVisibleText_modal">Киев</p>
-                                        <img class="selectVisibleArrow_modal" src="./app/images/selectArrow.png" alt="arrow">
-                                    </div>
-                                    <ul>
-                                        <li class="modal__content_select-item">
-                                            <div class="selectItem_modal">
-                                                <p class="selectVisibleText_modal">Киев</p>
-                                            </div>
-                                        </li>
-                                        <li class="modal__content_select-item">
-                                            <div class="selectItem_modal">
-                                                <p class="selectVisibleText_modal">Львов</p>
-                                            </div>
-                                        </li>
-                                        <li class="modal__content_select-item">
-                                            <div class="selectItem_modal">
-                                                <p class="selectVisibleText_modal">Сумы</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+
+                            <select class="select__modal">
+                                <option>Киев</option>
+                                <option>Лондон</option>
+                                <option>Берлин</option>
+                                <option>Харьков</option>
+                                <option>Хабаровск</option>
+                                <option>Бородино</option>
+                            </select>
                         </div>
                         <div class="modal__searching__header__apartments">
                             <div class="choose__rooms_items">
@@ -683,7 +657,9 @@
                     </li>
                 </ul>
     </div>
-
     <script type="text/javascript" src="app/js/scripts.js"></script>
+    <script src="app/js/jquery-1.11.1.min.js"></script>
+    <script src="app/js/select.js"></script>
+    <script src="app/js/jQuery.slider.js"></script>
 </body>
 </html>

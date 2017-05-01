@@ -15,13 +15,43 @@ body{
 a{
   text-decoration: none;
 }
-.button{
-  border:0;
-  height: 40px;
-}
-.wrapper{
 
+.button_green, .button_white{
+  border:0;
+  width:100%;
+  height: 40px;
+  border-radius: 3px;
+  font-family: $font;
+  box-sizing: border-box;
 }
+
+.button_green:hover{
+  background-color: #50DB88;
+  border: 1px solid #DFE3E6;
+}
+.button_green:active{
+  background-color: rgba(48, 174, 99,0.5);
+  border: 1px solid #DFE3E6;
+}
+.button_green{
+  background-color: #30AE63;
+  color: #FFFFFF;
+}
+
+.button_white{
+  background-color: #FFFFFF;
+  color:#30AE63;
+}
+.button_white:hover{
+  background-color: #50DB88 !important;
+  color: #FFFFFF;
+  border: 0;
+}
+.button_white:active{
+  background-color: rgba(255, 255, 255,0.5) !important;
+  border: 0;
+}
+
 
 
 
