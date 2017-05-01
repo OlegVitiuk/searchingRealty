@@ -26,6 +26,9 @@ $(document).ready(function(){
 	});
 	$(".hamb_on").on("click",function () {
 		$(".hamburger__actions").css("display","block");
+		$("body").css({
+			"overflow":"hidden"
+		});
 	});
 
 	//overflow
