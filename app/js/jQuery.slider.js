@@ -16,7 +16,7 @@ $.fn.slider = function(){
    
    return this.each(function(){
     var elem = $(this);
-    var elemWidth = $(this).width();
+    var elemWidth = $('.slide').width();
     var slides = $('.slide');
     var numberofElem = length.slides;
     
