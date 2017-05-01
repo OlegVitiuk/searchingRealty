@@ -54,13 +54,15 @@
   font-family: $font;
   font-size: 14px;
 }
-.realty_search_content_show:hover{
-  width:95%;
-  background-color: #50DB88;
-  color: #FFFFFF;
-  border: 1px solid #DFE3E6;
-  box-sizing: border-box;
-}
+
+//.realty_search_content_show:hover{
+//  width:95%;
+//  background-color: #50DB88;
+//  color: #FFFFFF;
+//  border: 1px solid #DFE3E6;
+//  box-sizing: border-box;
+//}
+
 .realty_search_content_show{
   margin: 30px 0px 0px 5px;
   width:95%;
@@ -366,20 +368,14 @@
 
     &_join{
       width: 89.888%;
-      background-color: #30AE63;
-      color: #FFFFFF;
+      //background-color: #30AE63;
+      //color: #FFFFFF;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: $font;
       font-size: 14px;
-      border-radius: 3px;
-    }
-    &_join:hover{
-      background-color: #50DB88;
-      color: #FFFFFF;
-      border: 1px solid #DFE3E6;
-      box-sizing: border-box;
+      //border-radius: 3px;
     }
 
     &_inner{

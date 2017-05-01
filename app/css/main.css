@@ -25,9 +25,40 @@ body {
 a {
   text-decoration: none; }
 
-.button {
+.button_green, .button_white {
   border: 0;
-  height: 40px; }
+  width: 100%;
+  height: 40px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font-family: "Open Sans";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.button_green:hover {
+  background-color: #50DB88;
+  border: 1px solid #DFE3E6; }
+
+.button_green:active {
+  background-color: rgba(48, 174, 99, 0.5);
+  border: 1px solid #DFE3E6; }
+
+.button_green {
+  background-color: #30AE63;
+  color: #FFFFFF; }
+
+.button_white {
+  background-color: #FFFFFF;
+  color: #30AE63; }
+
+.button_white:hover {
+  background-color: #50DB88 !important;
+  color: #FFFFFF;
+  border: 0; }
+
+.button_white:active {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border: 0; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -329,14 +360,6 @@ table {
   margin-right: 40px;
   font-family: "Open Sans";
   font-size: 14px; }
-
-.realty_search_content_show:hover {
-  width: 95%;
-  background-color: #50DB88;
-  color: #FFFFFF;
-  border: 1px solid #DFE3E6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
 
 .realty_search_content_show {
   margin: 30px 0px 0px 5px;
@@ -800,8 +823,6 @@ table {
     padding: 20px; }
     .telegram__content__info_join {
       width: 89.888%;
-      background-color: #30AE63;
-      color: #FFFFFF;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -815,15 +836,7 @@ table {
           -ms-flex-align: center;
               align-items: center;
       font-family: "Open Sans";
-      font-size: 14px;
-      -webkit-border-radius: 3px;
-              border-radius: 3px; }
-    .telegram__content__info_join:hover {
-      background-color: #50DB88;
-      color: #FFFFFF;
-      border: 1px solid #DFE3E6;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
+      font-size: 14px; }
     .telegram__content__info_inner {
       width: 81.750%;
       height: 342px;
@@ -1496,9 +1509,17 @@ table {
   .shareAds_img {
     margin: 0px 13px 0px 15px; }
 
+.shareAds:hover, .shareAds:active {
+  background-color: rgba(255, 255, 255, 0.3); }
+
 .enter {
   height: 17.09px;
   width: 46px; }
+
+.enter:hover, .enter:active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
 
 .header_content {
   width: 100%;

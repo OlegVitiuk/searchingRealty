@@ -69,10 +69,18 @@
   }
 }
 
+.shareAds:hover, .shareAds:active{
+  background-color: rgba(255,255,255,0.3);
+}
+
 .enter{
   height:17.09px;
   width:46px;
 }
+.enter:hover, .enter:active{
+  transform: scale(1.1);
+}
+
 .header_content{
   width:100%;
   display: flex;
