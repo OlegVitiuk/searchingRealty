@@ -20,16 +20,23 @@
                             <a class="nav_link underline-white" href="./app/index.html">Аренда</a>
                             <a class="h_hidden nav_link underline-white" href="#">Продажа</a>
                             <a class="h_hidden nav_link underline-white" href="#">Посуточно</a>
-                            <a class="h_hidden nav_link underline-white" href="#">
+                            <div class="h_hidden nav_link underline-white lastItem" href="#">
                                 <div class="h_hidden header_ovals" >
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
                                     <div class="header_oval"></div>
                                 </div>
-                                <div class="header_text">
-                                    <p>Еще</p>
+                                <p class="header_text">Еще</p>
+                                <div class="overflow">
+                                    <ul class="overflow__menu">
+                                        <li class="overflow__menu-item"><a href="#">Stop app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Restart app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Rename app</a></li>
+                                        <li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+                                        <li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+                                    </ul>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="h_hidden nav_register">
@@ -647,7 +654,6 @@
                     </li>
                 </ul>
     </div>
-
     <script type="text/javascript" src="app/js/scripts.js"></script>
 </body>
 </html>

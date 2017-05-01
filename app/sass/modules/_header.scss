@@ -31,6 +31,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  //position: relative;
 }
 .header_ovals{
   height: 20px;
@@ -166,6 +167,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-end;
+}
+.lastItem{
+  position: relative;
 }
 
 

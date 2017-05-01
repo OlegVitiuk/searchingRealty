@@ -28,11 +28,16 @@ $(document).ready(function(){
 		$(".hamburger__actions").css("display","block");
 	});
 
-
-
+	//overflow
+	$('.lastItem').on("click",function () {
+		$(".overflow").show();
+		});
+	$('.overflow').on("click",function (e) {
+		$(this).hide();
+		e.stopPropagation();
+	});
 
 	//plugin using
-
 	$(".select__search").selectPlugin({
 		placeholder: "Киев"
 	});
