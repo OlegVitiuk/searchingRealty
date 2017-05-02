@@ -8,9 +8,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  .telegram__header_menu,.select__header,.choose__rooms,.choose__city,
- .choose__city__content_select-item,.content__search_start,
- .selectItem_header,.choose__city__content_select,
+  .telegram__header_menu,
  .telegram__content__info,.footer__content__item_navigation{
   width: 100% !important;
  }
@@ -82,11 +80,10 @@
   }
 }
 .content_realty{
-  width:100% !important;
+ flex-wrap: wrap;
 }
 .content__search{
-    flex-direction: column;
-    align-items: center !important;
+  
 }
 .rehidden{
 }

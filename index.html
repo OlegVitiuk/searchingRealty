@@ -6,8 +6,6 @@
     <title>searchingRealty</title>
     <link rel="stylesheet" href="app/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="app/js/jquery-1.11.1.min.js"></script>
-    <script src="app/js/select.js"></script>
 </head>
 <body>
     <div class="page">
@@ -160,8 +158,10 @@
                                     <div class="content__title_best">
                                         <p>Лучшие предложения в Киеве</p>
                                     </div>
+                                    <div id = "slidesShow">
                                     <div class="apartments">
-                                        <div class="apartment">
+                                    <div id = "slidesContainer">
+                                        <div class="apartment slide">
                                             <div class="apartment__logo">
                                                 <div class="apartment__logo_ovals">
                                                     <div class="apartment__logo_oval"></div>
@@ -184,7 +184,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="apartment">
+                                        <div class="apartment slide">
                                             <div class="apartment__logo">
                                                 <div class="apartment__logo_ovals">
                                                     <div class="apartment__logo_oval"></div>
@@ -207,7 +207,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="apartment">
+                                        <div class="apartment slide">
                                             <div class="apartment__logo">
                                                 <div class="apartment__logo_ovals">
                                                     <div class="apartment__logo_oval"></div>
@@ -230,7 +230,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="apartment">
+                                        <div class="apartment slide">
                                             <div class="apartment__logo">
                                                 <div class="apartment__logo_ovals">
                                                     <div class="apartment__logo_oval"></div>
@@ -253,6 +253,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -372,6 +374,8 @@
                             </div>
                         </div>
                     </div>
+                
+                
                 <div class="fullwide content__telegram">
                     <div class="telegram__header">
                         <p class="telegram__header_title">Общайтесь в Telegram</p>
@@ -405,7 +409,7 @@
                                 <a class="telegram__content__info_join button_green" href="#">Присоединиться в Telegram</a>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="content__switchers">
                         <input id="firstSlide" type="radio" name="page" value="1">
                         <label for="firstSlide"></label>
@@ -413,6 +417,8 @@
                         <label for="secondSlide"></label>
                     </div>
                 </div>
+                
+                
                 <div class="content__metrovka">
                     <div class="content__metrovka_wrapper">
                         <div class="telegram__header metrovka">
@@ -655,5 +661,8 @@
                 </ul>
     </div>
     <script type="text/javascript" src="app/js/scripts.js"></script>
+    <script src="app/js/jquery-1.11.1.min.js"></script>
+    <script src="app/js/select.js"></script>
+    <script src="app/js/jQuery.slider.js"></script>
 </body>
 </html>

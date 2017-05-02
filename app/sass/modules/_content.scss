@@ -4,14 +4,14 @@
   width: 100%;
   padding-top: 22px;
   margin: auto;
-}	
+} 
 .content_realty{
     margin: auto;
     width:890px;
 }
 .realty_search{
   background-color: #FFFFFF;
-  height:295px;
+ // height:295px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -54,15 +54,13 @@
   font-family: $font;
   font-size: 14px;
 }
-
-//.realty_search_content_show:hover{
-//  width:95%;
-//  background-color: #50DB88;
-//  color: #FFFFFF;
-//  border: 1px solid #DFE3E6;
-//  box-sizing: border-box;
-//}
-
+.realty_search_content_show:hover{
+  width:95%;
+  background-color: #50DB88;
+  color: #FFFFFF;
+  border: 1px solid #DFE3E6;
+  box-sizing: border-box;
+}
 .realty_search_content_show{
   margin: 30px 0px 0px 5px;
   width:95%;
@@ -92,7 +90,7 @@
   align-items: center;
   position: relative;
 }
-.colorOfItem{
+.colorOfMetro{
   position: absolute;
   height:8px;
   width:8px;
@@ -136,7 +134,7 @@
 }
 
 .content__realty__offers{
-  height:848px;
+  //height:848px;
   width:100%;
   &_best, &_last{
     width:100%;
@@ -147,10 +145,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 384px;
+    //height: 384px;
   }
   &_best{
-    height: 384px;
+    //height: 384px;
   }
   &_last{
     height: 444px;
@@ -167,7 +165,7 @@
   }
 
   &_best{
-    height: 304px;
+    //height: 304px;
   }
   &_last{
     height:356px;
@@ -179,6 +177,9 @@
   display: flex;
   justify-content: space-between;
   height: 248px;
+  
+  overflow: hidden;
+
 }
 .content__title_best, .offers__best_footer{
   display: flex;
@@ -190,6 +191,7 @@
 .content__title_best{
   font-size: 24px;
   color: #152935;
+  margin: 10px;
 }
 .offers__best_footer{
   border-top: 2px solid RGBA(90, 104, 114, .08);
@@ -300,7 +302,7 @@
     align-items: center;
   }
   &_best {
-    height: 344px;
+   // height: 344px;
   }
   &_last{
     height:404px;
@@ -368,14 +370,20 @@
 
     &_join{
       width: 89.888%;
-      //background-color: #30AE63;
-      //color: #FFFFFF;
+      background-color: #30AE63;
+      color: #FFFFFF;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: $font;
       font-size: 14px;
-      //border-radius: 3px;
+      border-radius: 3px;
+    }
+    &_join:hover{
+      background-color: #50DB88;
+      color: #FFFFFF;
+      border: 1px solid #DFE3E6;
+      box-sizing: border-box;
     }
 
     &_inner{
@@ -565,6 +573,8 @@
     visibility: hidden;
     transform: scale(0);
 }
+
+
 //listing
 @import "../utilities/_index";
 .content{
@@ -603,7 +613,7 @@ li{
 .description{
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 40%;
+  //width: 40%;
   line-height:30px;
   h4{
     color: blue;
