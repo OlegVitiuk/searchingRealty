@@ -103,9 +103,7 @@ table {
     width: 100% !important;
     height: auto !important; }
 
-  .telegram__header_menu, .select__header, .choose__rooms, .choose__city,
-  .choose__city__content_select-item, .content__search_start,
-  .selectItem_header, .choose__city__content_select,
+  .telegram__header_menu,
   .telegram__content__info, .footer__content__item_navigation {
     width: 100% !important; }
 
@@ -169,11 +167,7 @@ table {
     text-align: center; }
 
   .content_realty {
-    width: 100% !important; }
-
-  .content__search {
-    flex-direction: column;
-    align-items: center !important; }
+    flex-wrap: wrap; }
 
   .hidden {
     display: none !important;
@@ -253,7 +247,6 @@ table {
 
 .realty_search {
   background-color: #FFFFFF;
-  height: 295px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -292,6 +285,13 @@ table {
   font-family: "Open Sans";
   font-size: 14px; }
 
+.realty_search_content_show:hover {
+  width: 95%;
+  background-color: #50DB88;
+  color: #FFFFFF;
+  border: 1px solid #DFE3E6;
+  box-sizing: border-box; }
+
 .realty_search_content_show {
   margin: 30px 0px 0px 5px;
   width: 95%;
@@ -319,7 +319,7 @@ table {
   align-items: center;
   position: relative; }
 
-.colorOfItem {
+.colorOfMetro {
   position: absolute;
   height: 8px;
   width: 8px;
@@ -361,7 +361,6 @@ table {
   position: relative; }
 
 .content__realty__offers {
-  height: 848px;
   width: 100%; }
   .content__realty__offers_best, .content__realty__offers_last {
     width: 100%;
@@ -371,10 +370,7 @@ table {
     background-color: #FFFFFF;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    height: 384px; }
-  .content__realty__offers_best {
-    height: 384px; }
+    align-items: center; }
   .content__realty__offers_last {
     height: 444px; }
 
@@ -384,8 +380,6 @@ table {
   flex-direction: column;
   justify-content: space-between;
   align-items: center; }
-.offers__content_best {
-  height: 304px; }
 .offers__content_last {
   height: 356px; }
 
@@ -393,7 +387,8 @@ table {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 248px; }
+  height: 248px;
+  overflow: hidden; }
 
 .content__title_best, .offers__best_footer {
   display: flex;
@@ -404,7 +399,8 @@ table {
 
 .content__title_best {
   font-size: 24px;
-  color: #152935; }
+  color: #152935;
+  margin: 10px; }
 
 .offers__best_footer {
   border-top: 2px solid RGBA(90, 104, 114, 0.08);
@@ -494,8 +490,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center; }
-.wrapper__offers__content_best {
-  height: 344px; }
 .wrapper__offers__content_last {
   height: 404px; }
 
@@ -556,11 +550,19 @@ table {
     padding: 20px; }
     .telegram__content__info_join {
       width: 89.888%;
+      background-color: #30AE63;
+      color: #FFFFFF;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "Open Sans";
-      font-size: 14px; }
+      font-size: 14px;
+      border-radius: 3px; }
+    .telegram__content__info_join:hover {
+      background-color: #50DB88;
+      color: #FFFFFF;
+      border: 1px solid #DFE3E6;
+      box-sizing: border-box; }
     .telegram__content__info_inner {
       width: 81.750%;
       height: 342px;
@@ -749,7 +751,6 @@ table {
 .description {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 40%;
   line-height: 30px; }
   .description h4 {
     color: blue; }
@@ -982,10 +983,11 @@ table {
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
   margin-top: 10px; }
 
 .choose__city {
-  width: 38.651%;
+  width: 320px;
   height: 66px;
   display: flex;
   flex-direction: column;
@@ -993,7 +995,7 @@ table {
 
 .choose__rooms {
   height: 66px;
-  width: 29.775%;
+  width: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -1402,6 +1404,33 @@ table {
   border-bottom: 2px solid transparent;
   border-top: 2px solid transparent;
   transition: 1s; }
+
+.control_prev,
+.control_next {
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer; }
+
+.control_prev:hover,
+.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease; }
+
+.control_prev {
+  border-radius: 0 2px 2px 0; }
+
+.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px; }
 
 .red {
   background-color: #E71D32; }
